@@ -1,3 +1,14 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+.navbar__register {
+    border: 0;
+    background-color: $underline-red-color;
+    color: #fff;
+    font-family: SF_bold;
+    text-transform: uppercase;
+    padding: 1rem 3rem;
+    margin-right: 3rem;
+    border-radius: 5rem;
+    cursor: pointer;
+}

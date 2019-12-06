@@ -26,10 +26,14 @@ html {
   margin: 0 auto; }
 
 .sticky {
+  display: block;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 9999; }
+
+.hidden {
+  display: none !important; }
 
 @font-face {
   font-family: SF;
@@ -209,6 +213,17 @@ html {
     border: 2px solid white;
     background: transparent; }
 
+.navbar__register {
+  border: 0;
+  background-color: #ff2b06;
+  color: #fff;
+  font-family: SF_bold;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  margin-right: 3rem;
+  border-radius: 5rem;
+  cursor: pointer; }
+
 .navbar {
   position: absolute;
   top: 0;
@@ -218,10 +233,13 @@ html {
   width: 100%; }
 
 .navbar__brand {
-  flex-basis: 30%; }
+  flex: 0 0 30%; }
 
 .navbar__menu {
-  flex-basis: 60%; }
+  flex: 0 0 50%; }
+
+.navbar__button {
+  flex: 0 0 20%; }
 
 .navbar__container {
   display: flex;
@@ -229,15 +247,38 @@ html {
   justify-content: center;
   align-items: center; }
 
+.navbar__button {
+  flex: 0 0 20%; }
+
+.navbar__lang {
+  font-family: Sf_bold;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #ff2b06;
+  font-weight: bold; }
+
 .navbar__menu_list {
   display: flex;
   list-style: none; }
 
 .navbar__menu_list_item {
-  margin-right: 6%;
-  padding-bottom: 1%; }
-  .navbar__menu_list_item:hover {
-    border-bottom: 2px solid red; }
+  margin-right: 1rem;
+  padding: 1rem 1rem;
+  position: relative; }
+
+.navbar__menu_list_item::before {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #ff2b06;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all .2s ease-in-out;
+  transform-origin: left; }
+
+.navbar__menu_list_item:hover::before {
+  width: 100%; }
 
 .navbar__menu_list_item_link {
   text-decoration: none; }
