@@ -15,20 +15,27 @@
     }
 
     &__closebtn {
-        position: absolute;
-        top: 2.5rem;
-        right: 2.5rem;
-        width: 5rem;
-        height: 5rem;
+        position: fixed;
+        display: inline-block;
+        top: 2rem;
+        right: 2rem;
+        font-size: 2rem;
+        color: $speakers-topic-color;
     }
 
     &__content {
         @include absCenter();
         width: 60%;
-        min-height: 50rem;
+        height: 50rem;
+        padding: 6rem;
         background-color: #fff;
+        overflow-y: auto;
         border-radius: 3px;
         box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.7);
         z-index: 10000;
     }
+}
+
+.form {
+
 }

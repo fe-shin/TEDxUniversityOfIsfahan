@@ -9,8 +9,17 @@
     font-size: 1.2rem;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 1rem 3rem;
+    padding: 1rem 0rem;
     margin-right: 3rem;
     border-radius: 5rem;
     cursor: pointer;
+    transition: all .1s;
+    display: inline-block;
+    width: 12rem;
+    text-align: center;
+
+    &:hover {
+        background-color: rgba($underline-red-color, 0.8);
+        letter-spacing: 1.5px;
+    }
 }

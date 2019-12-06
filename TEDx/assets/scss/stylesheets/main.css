@@ -221,10 +221,17 @@ html {
   font-size: 1.2rem;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 1rem 3rem;
+  padding: 1rem 0rem;
   margin-right: 3rem;
   border-radius: 5rem;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all .1s;
+  display: inline-block;
+  width: 12rem;
+  text-align: center; }
+  .navbar__register:hover {
+    background-color: rgba(255, 43, 6, 0.8);
+    letter-spacing: 1.5px; }
 
 .registerPopUp {
   position: fixed;
@@ -239,14 +246,23 @@ html {
   .registerPopUp:target {
     opacity: 1;
     visibility: visible; }
+  .registerPopUp__closebtn {
+    position: fixed;
+    display: inline-block;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: #616161; }
   .registerPopUp__content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 60%;
-    min-height: 50rem;
+    height: 50rem;
+    padding: 6rem;
     background-color: #fff;
+    overflow-y: auto;
     border-radius: 3px;
     box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.7);
     z-index: 10000; }
@@ -288,12 +304,12 @@ html {
   display: flex;
   list-style: none; }
 
-.navbar__menu_list_item {
+.navbar__menu_list_item_link {
   margin-right: 1rem;
   padding: 1rem 1rem;
   position: relative; }
 
-.navbar__menu_list_item::before {
+.navbar__menu_list_item_link::before {
   content: "";
   width: 0%;
   height: 2px;
@@ -304,7 +320,7 @@ html {
   transition: all .2s ease-in-out;
   transform-origin: left; }
 
-.navbar__menu_list_item:hover::before {
+.navbar__menu_list_item_link:hover::before {
   width: 100%; }
 
 .navbar__menu_list_item_link {
