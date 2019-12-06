@@ -233,51 +233,81 @@ html {
     background-color: rgba(255, 43, 6, 0.8);
     letter-spacing: 1.5px; }
 
-.form__group {
+.form {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .form__group:not(:last-child) {
-    margin-bottom: 2rem; }
-  .form__group--double {
-    display: flex; }
-    .form__group--double > * {
-      flex: 1; }
-
-.form__input {
-  font-size: 1.5rem;
-  font-family: SF, sans-serif;
-  color: #575757;
-  padding: 1.5rem 2rem;
-  border-radius: 2px;
-  background-color: transparent;
-  width: 90%;
-  border: none;
-  border-bottom: 3px solid #575757;
-  display: block;
-  transition: all .3s; }
-  .form__input:focus {
-    outline: none;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-    border-bottom: 3px solid #ff2b06; }
-  .form__input:focus:invalid {
-    border-bottom: 3px solid #ff2b06; }
-  .form__input::-webkit-input-placeholder {
-    color: #ddd; }
-
-.form__label {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-left: 5rem;
-  margin-top: .7rem;
-  display: block;
-  transition: all .3s;
-  align-self: flex-start; }
-
-.form__input:placeholder-shown + .form__label {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-4rem); }
+  .form__group {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .form__group:not(:last-child) {
+      margin-bottom: 1rem; }
+    .form__group--double {
+      display: flex; }
+      .form__group--double > * {
+        flex: 1; }
+    .form__group--button {
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 3rem; }
+      .form__group--button button {
+        font-size: 1.5rem;
+        width: 60%;
+        height: 5rem; }
+  .form__input {
+    font-size: 1.6rem;
+    font-family: SF, sans-serif;
+    color: #575757;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    background-color: transparent;
+    width: 90%;
+    border: none;
+    border-bottom: 3px solid #575757;
+    display: block;
+    transition: all .3s; }
+    .form__input:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+      border-bottom: 3px solid #ff2b06; }
+    .form__input:focus:invalid {
+      border-bottom: 3px solid #ff2b06; }
+    .form__input::-webkit-input-placeholder {
+      font-weight: bold;
+      color: rgba(0, 0, 0, 0.7); }
+  .form__label {
+    font-family: SF, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 5rem;
+    margin-top: .7rem;
+    margin-bottom: .7rem;
+    display: block;
+    transition: all .3s;
+    align-self: flex-start; }
+    .form__label--2 {
+      font-family: SF, sans-serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-left: 5rem;
+      margin-top: .7rem;
+      margin-bottom: .7rem;
+      display: block;
+      transition: all .3s;
+      align-self: flex-start; }
+  .form__input:placeholder-shown + .form__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-1rem); }
+  .form__textarea {
+    resize: none;
+    width: 90%;
+    height: 5rem;
+    color: rgba(0, 0, 0, 0.3); }
 
 .registerPopUp {
   position: fixed;
@@ -288,15 +318,13 @@ html {
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 9999;
   opacity: 0;
-  visibility: hidden; }
-  .registerPopUp:target {
-    opacity: 1;
-    visibility: visible; }
+  visibility: hidden;
+  transition: all .2s ease-in-out; }
   .registerPopUp__closebtn {
-    position: fixed;
+    position: sticky;
+    top: 0;
+    left: 0;
     display: inline-block;
-    top: 2rem;
-    right: 2rem;
     font-size: 2rem;
     color: #616161; }
   .registerPopUp__content {
@@ -304,14 +332,26 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60%;
+    width: 50%;
     height: 50rem;
-    padding: 6rem;
+    padding: 4rem;
     background-color: #fff;
     overflow-y: auto;
     border-radius: 3px;
     box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.7);
-    z-index: 10000; }
+    z-index: 10000;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.2);
+    transition: all .3s .2s; }
+    .registerPopUp__content .container {
+      text-align: center;
+      margin: -2rem auto 2rem auto; }
+  .registerPopUp:target {
+    opacity: 1;
+    visibility: visible; }
+  .registerPopUp:target .registerPopUp__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
 
 .navbar {
   position: absolute;
