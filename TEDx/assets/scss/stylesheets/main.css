@@ -48,48 +48,48 @@ html {
  */
 .navbar__menu_list_item_link {
   font-family: SF;
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 1.2;
   color: white; }
 
 .stickyNavbar__menu_list_item_link {
   font-family: SF_regular;
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 1.2;
   color: black; }
   .stickyNavbar__menu_list_item_link:hover {
     font-family: SF_regular;
-    font-size: 1.3rem;
+    font-size: 2rem;
     font-weight: 400;
     line-height: 1.2;
     color: red; }
 
 .description__title {
   font-family: SF_regular;
-  font-size: 3rem;
+  font-size: 4.5rem;
   font-weight: 400;
   line-height: 1.2;
   color: black; }
 
 .countdown__title {
   font-family: SF_regular;
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-weight: 400;
   line-height: 1.2;
   color: black; }
 
 .speakers__title {
   font-family: SF_regular;
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-weight: 400;
   line-height: 1.2;
   color: black; }
 
 .speakers__people_person_name {
   font-family: SF_bold;
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 1.2;
   color: black; }
@@ -113,28 +113,28 @@ html {
 .what__explain_ted_text,
 .what__explain_tedx_text {
   font-family: SF_regular;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: black; }
 
 .team__title {
   font-family: SF_regular;
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-weight: 400;
   line-height: 1.2;
   color: black; }
 
 .team__members_member_name {
   font-family: SF_regular;
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: bold;
   line-height: 1.2;
   color: black; }
 
 .team__members_member_position {
   font-family: SF_regular;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.5;
   color: #616161; }
@@ -148,14 +148,14 @@ html {
 
 .footer__link {
   font-family: SF_regular;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.2;
   color: black;
   text-decoration: none; }
   .footer__link:hover {
     font-family: SF_regular;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 1.2;
     color: white; }

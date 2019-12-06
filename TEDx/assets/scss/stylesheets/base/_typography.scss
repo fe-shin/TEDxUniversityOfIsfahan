@@ -4,34 +4,34 @@
 
 //navbar
 .navbar__menu_list_item_link {
-  @include typographyStyle($sf-ultralight, 1.3rem, 400, $base-color, 1.2);
+  @include typographyStyle($sf-ultralight, 2rem, 400, $base-color, 1.2);
 }
 
 //sticky navbar
 .stickyNavbar__menu_list_item_link {
-  @include typographyStyle($sf-regular, 1.3rem, 400, $black-color, 1.2);
+  @include typographyStyle($sf-regular, 2rem, 400, $black-color, 1.2);
   &:hover {
-    @include typographyStyle($sf-regular, 1.3rem, 400, red, 1.2);
+    @include typographyStyle($sf-regular, 2rem, 400, red, 1.2);
   }
 }
 
 //description
 .description__title {
-  @include typographyStyle($sf-regular, 3rem, 400, $black-color, 1.2);
+  @include typographyStyle($sf-regular, 4.5rem, 400, $black-color, 1.2);
 }
 
 //countdown
 .countdown__title {
-  @include typographyStyle($sf-regular, 2.5rem, 400, $black-color, 1.2);
+  @include typographyStyle($sf-regular, 4rem, 400, $black-color, 1.2);
 }
 
 //speakers
 .speakers__title {
-  @include typographyStyle($sf-regular, 2.5rem, 400, $black-color, 1.2);
+  @include typographyStyle($sf-regular, 4rem, 400, $black-color, 1.2);
 }
 
 .speakers__people_person_name {
-  @include typographyStyle($sf-bold, 1.3rem, 400, $black-color, 1.2);
+  @include typographyStyle($sf-bold, 2rem, 400, $black-color, 1.2);
 }
 
 .speakers__people_person_topic {
@@ -53,20 +53,20 @@
 
 .what__explain_ted_text,
 .what__explain_tedx_text {
-  @include typographyStyle($sf-regular, 0.9rem, 400, $black-color, 1.5);
+  @include typographyStyle($sf-regular, 1rem, 400, $black-color, 1.5);
 }
 
 //team
 .team__title {
-  @include typographyStyle($sf-regular, 2.5rem, 400, $black-color, 1.2);
+  @include typographyStyle($sf-regular, 4rem, 400, $black-color, 1.2);
 }
 
 .team__members_member_name {
-  @include typographyStyle($sf-regular, 1.3rem, bold, $black-color, 1.2);
+  @include typographyStyle($sf-regular, 2rem, bold, $black-color, 1.2);
 }
 
 .team__members_member_position {
-  @include typographyStyle($sf-regular, 1rem, 400, $speakers-topic-color, 1.5);
+  @include typographyStyle($sf-regular, 1.5rem, 400, $speakers-topic-color, 1.5);
 }
 
 //footer
@@ -81,10 +81,10 @@
 }
 
 .footer__link {
-  @include typographyStyle($sf-regular, 1rem, 400, $black-color, 1.2);
+  @include typographyStyle($sf-regular, 1.5rem, 400, $black-color, 1.2);
   text-decoration: none;
   &:hover {
-    @include typographyStyle($sf-regular, 1rem, 400, $base-color, 1.2);
+    @include typographyStyle($sf-regular, 1.5rem, 400, $base-color, 1.2);
   }
 }
 
