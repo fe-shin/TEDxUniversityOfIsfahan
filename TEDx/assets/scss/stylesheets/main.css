@@ -207,7 +207,8 @@ html {
   background-size: cover;
   min-height: 100vh;
   position: relative;
-  width: 100%; }
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
 
 .footer {
   padding: 2% 0;
@@ -460,16 +461,23 @@ html {
   display: flex;
   list-style: none; }
 
-.stickyNavbar__menu_list_item {
-  margin-right: 3%; }
-
 .stickyNavbar__menu_list_item_link {
+  margin-right: 1rem;
+  padding: 1rem 1rem;
   text-decoration: none; }
 
 .description {
+  margin-top: -20rem;
   background-color: #F3F3F3;
   text-align: center;
-  padding: 8% 0 50% 0; }
+  padding: 22rem 15rem 20rem 20rem; }
+  .description__paragraph {
+    margin-top: 5rem;
+    font-family: Diodrum_medium, sans-serif;
+    font-size: 1.5rem;
+    text-align: center; }
+    .description__paragraph p {
+      margin-top: .5rem; }
 
 .countdown {
   padding: 20% 0;

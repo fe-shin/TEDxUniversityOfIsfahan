@@ -104,19 +104,29 @@
   list-style: none;
 }
 
-.stickyNavbar__menu_list_item {
-  margin-right: 3%;
-}
-
 .stickyNavbar__menu_list_item_link {
+  margin-right: 1rem;
+  padding: 1rem 1rem;
   text-decoration: none;
 }
 
 //description
 .description {
+  margin-top: -20rem;
   background-color: $description-background-color;
   text-align: center;
-  padding: 8% 0 50% 0;
+  padding: 22rem 15rem 20rem 20rem;
+
+  &__paragraph {
+    margin-top: 5rem;
+    font-family: Diodrum_medium, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+
+    p {
+      margin-top: .5rem;
+    }
+  }
 }
 
 //countdown
