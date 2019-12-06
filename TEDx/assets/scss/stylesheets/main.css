@@ -41,65 +41,89 @@ html {
 
 @font-face {
   font-family: SF_regular;
-  src: url("../../fonts/SF-UI-Display-Regular.otf"); }
+  src: url("../../fonts/SF-UI-Display-Regular.ttf"); }
 
 @font-face {
   font-family: SF_bold;
-  src: url("../../fonts/sf-ui-display-bold-58646a511e3d9.woff"); }
+  src: url("../../fonts/sf-ui-display-bold.woff"); }
+
+@font-face {
+  font-family: Diodrum_extralight;
+  src: url("../../fonts//Diodrum/DiodrumArabic-Extralight.ttf"); }
+
+@font-face {
+  font-family: Diodrum_light;
+  src: url("../../fonts/Diodrum/DiodrumArabic-Light.ttf"); }
+
+@font-face {
+  font-family: Diodrum_regular;
+  src: url("../../fonts/Diodrum/DiodrumArabic-Regular.ttf"); }
+
+@font-face {
+  font-family: Diodrum_medium;
+  src: url("../../fonts/Diodrum/DiodrumArabic-Medium.ttf"); }
+
+@font-face {
+  font-family: Diodrum_bold;
+  src: url("../../fonts/Diodrum/DiodrumArabic-Bold.ttf"); }
+
+@font-face {
+  font-family: Diodrum_semibold;
+  src: url("../../fonts/Diodrum/DiodrumArabic-Semibold.ttf"); }
 
 /**
  * Basic typography style for copy text
  */
 .navbar__menu_list_item_link {
-  font-family: SF;
+  font-family: Diodrum_extralight;
   font-size: 2rem;
   font-weight: 400;
   line-height: 1.2;
   color: white; }
 
 .stickyNavbar__menu_list_item_link {
-  font-family: SF_regular;
+  font-family: Diodrum_regular;
   font-size: 2rem;
   font-weight: 400;
   line-height: 1.2;
   color: black; }
   .stickyNavbar__menu_list_item_link:hover {
-    font-family: SF_regular;
+    font-family: Diodrum_regular;
     font-size: 2rem;
     font-weight: 400;
     line-height: 1.2;
     color: red; }
 
 .description__title {
-  font-family: SF_regular;
+  font-family: Diodrum_regular;
   font-size: 4.5rem;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.8;
   color: black; }
 
 .countdown__title {
-  font-family: SF_regular;
+  font-family: Diodrum_regular;
   font-size: 4rem;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.8;
   color: black; }
 
 .speakers__title {
-  font-family: SF_regular;
+  font-family: Diodrum_regular;
   font-size: 4rem;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.8;
   color: black; }
 
 .speakers__people_person_name {
-  font-family: SF_bold;
+  font-family: Diodrum_bold;
   font-size: 2rem;
   font-weight: 400;
   line-height: 1.2;
   color: black; }
 
 .speakers__people_person_topic {
-  font-family: SF_regular;
+  font-family: Diodrum_regular;
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.5;
@@ -108,57 +132,57 @@ html {
 .what__explain_ted_title,
 .what__explain_tedx_title,
 .what__about_title {
-  font-family: SF_regular;
+  font-family: Diodrum_regular;
   font-size: 2rem;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.5;
   color: black; }
 
 .what__explain_ted_text,
 .what__explain_tedx_text {
-  font-family: SF_regular;
+  font-family: Diodrum_regular;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: black; }
 
 .team__title {
-  font-family: SF_regular;
+  font-family: Diodrum_regular;
   font-size: 4rem;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.8;
   color: black; }
 
 .team__members_member_name {
-  font-family: SF_regular;
+  font-family: Diodrum_regular;
   font-size: 2rem;
   font-weight: bold;
-  line-height: 1.2;
+  line-height: 1.5;
   color: black; }
 
 .team__members_member_position {
-  font-family: SF_regular;
+  font-family: Diodrum_regular;
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.5;
   color: #616161; }
 
 .footer__copyright {
-  font-family: SF_regular;
+  font-family: Diodrum_regular;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.2;
   color: #BCBCBC; }
 
 .footer__link {
-  font-family: SF_regular;
+  font-family: Diodrum_regular;
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.2;
   color: black;
   text-decoration: none; }
   .footer__link:hover {
-    font-family: SF_regular;
+    font-family: Diodrum_regular;
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 1.2;
@@ -217,11 +241,11 @@ html {
   border: 0;
   background-color: #ff2b06;
   color: #fff;
-  font-family: SF_bold;
+  font-family: Diodrum_bold;
   font-size: 1.2rem;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 1rem 0rem;
+  padding: .2rem 0 1rem 0;
   margin-right: 3rem;
   border-radius: 5rem;
   cursor: pointer;
@@ -380,7 +404,7 @@ html {
   flex: 0 0 20%; }
 
 .navbar__lang {
-  font-family: Sf_bold;
+  font-family: Diodrum_bold;
   font-size: 1.5rem;
   text-decoration: none;
   color: #ff2b06;
@@ -414,22 +438,27 @@ html {
 
 .stickyNavbar {
   display: flex;
-  padding: 1% 0;
+  justify-content: center;
+  padding: 1.8rem 0;
   border-bottom: 1px solid lightgray;
   background-color: white;
   box-shadow: 1px 1px 10px 1px gray;
   z-index: 999; }
 
 .stickyNavbar__brand {
-  margin-right: 5%; }
+  flex: 0 0 30%; }
 
 .stickyNavbar__menu {
-  flex-basis: 70%; }
+  flex: 0 0 50%; }
+
+.stickyNavbar__buttons {
+  flex: 0 0 20%;
+  display: flex;
+  justify-content: flex-end; }
 
 .stickyNavbar__menu_list {
   display: flex;
-  list-style: none;
-  margin-top: 0.5%; }
+  list-style: none; }
 
 .stickyNavbar__menu_list_item {
   margin-right: 3%; }

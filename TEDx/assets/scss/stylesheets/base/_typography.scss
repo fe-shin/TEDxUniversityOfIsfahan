@@ -17,17 +17,17 @@
 
 //description
 .description__title {
-  @include typographyStyle($sf-regular, 4.5rem, 400, $black-color, 1.2);
+  @include typographyStyle($sf-regular, 4.5rem, 400, $black-color, 1.8);
 }
 
 //countdown
 .countdown__title {
-  @include typographyStyle($sf-regular, 4rem, 400, $black-color, 1.2);
+  @include typographyStyle($sf-regular, 4rem, 400, $black-color, 1.8);
 }
 
 //speakers
 .speakers__title {
-  @include typographyStyle($sf-regular, 4rem, 400, $black-color, 1.2);
+  @include typographyStyle($sf-regular, 4rem, 400, $black-color, 1.8);
 }
 
 .speakers__people_person_name {
@@ -48,7 +48,7 @@
 .what__explain_ted_title,
 .what__explain_tedx_title,
 .what__about_title {
-  @include typographyStyle($sf-regular, 2rem, 400, $black-color, 1.2);
+  @include typographyStyle($sf-regular, 2rem, 400, $black-color, 1.5);
 }
 
 .what__explain_ted_text,
@@ -58,11 +58,11 @@
 
 //team
 .team__title {
-  @include typographyStyle($sf-regular, 4rem, 400, $black-color, 1.2);
+  @include typographyStyle($sf-regular, 4rem, 400, $black-color, 1.8);
 }
 
 .team__members_member_name {
-  @include typographyStyle($sf-regular, 2rem, bold, $black-color, 1.2);
+  @include typographyStyle($sf-regular, 2rem, bold, $black-color, 1.5);
 }
 
 .team__members_member_position {
