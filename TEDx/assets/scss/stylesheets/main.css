@@ -232,19 +232,24 @@ html {
   left: 0;
   height: 100vh;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999; }
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden; }
+  .registerPopUp:target {
+    opacity: 1;
+    visibility: visible; }
   .registerPopUp__content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 75%;
-    height: 20rem;
+    width: 60%;
+    min-height: 50rem;
     background-color: #fff;
     border-radius: 3px;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
-    z-index: 1000; }
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.7);
+    z-index: 10000; }
 
 .navbar {
   position: absolute;
@@ -310,7 +315,8 @@ html {
   padding: 1% 0;
   border-bottom: 1px solid lightgray;
   background-color: white;
-  box-shadow: 1px 1px 10px 1px gray; }
+  box-shadow: 1px 1px 10px 1px gray;
+  z-index: 999; }
 
 .stickyNavbar__brand {
   margin-right: 5%; }

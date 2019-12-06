@@ -81,6 +81,7 @@
   border-bottom: 1px solid $light-gray;
   background-color: $base-color;
   box-shadow: 1px 1px 10px 1px $gray-color;
+  z-index: 999;
 }
 
 .stickyNavbar__brand {
