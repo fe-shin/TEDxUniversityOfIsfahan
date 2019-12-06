@@ -1,0 +1,19 @@
+.registerPopUp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+
+    &__content {
+        @include absCenter();
+        width: 75%;
+        height: 20rem;
+        background-color: #fff;
+        border-radius: 3px;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+        z-index: 1000;
+    }
+}
