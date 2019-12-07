@@ -137,6 +137,28 @@
   background-color: $countdown-background-color;
   margin-top: -10%;
   clip-path: polygon(0 21%, 100% 0, 100% 100%, 0% 100%);
+
+  &__paragraph {
+    margin-top: 2rem;
+    font-size: 4rem;
+    font-family: Diodrum_extrathin, sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__circle {
+    width: 15rem;
+    height: 15rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
 }
 
 //speakers

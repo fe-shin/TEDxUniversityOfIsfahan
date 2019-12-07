@@ -190,12 +190,14 @@ html {
 
 .underline_black {
   border: 2px solid black;
+  background-color: black;
   width: 15%;
   display: inline-block;
   margin-left: -1%; }
 
 .underline_red {
   border: 2px solid #ff2b06;
+  background-color: #ff2b06;
   width: 15%;
   display: inline-block; }
 
@@ -486,6 +488,22 @@ html {
   background-color: #E9E9E9;
   margin-top: -10%;
   clip-path: polygon(0 21%, 100% 0, 100% 100%, 0% 100%); }
+  .countdown__paragraph {
+    margin-top: 2rem;
+    font-size: 4rem;
+    font-family: Diodrum_extrathin, sans-serif;
+    display: flex;
+    justify-content: center; }
+  .countdown__circle {
+    width: 15rem;
+    height: 15rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%; }
+    .countdown__circle:not(:last-child) {
+      margin-right: 2rem; }
 
 .speakers {
   padding: 10% 0;
