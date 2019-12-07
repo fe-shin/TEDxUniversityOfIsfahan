@@ -102,11 +102,12 @@
 .stickyNavbar__menu_list {
   display: flex;
   list-style: none;
+  margin-top: -.6rem;
 }
 
 .stickyNavbar__menu_list_item_link {
   margin-right: 1rem;
-  padding: 1rem 1rem;
+  padding: .2rem 1rem 1rem 1rem;
   text-decoration: none;
 }
 
