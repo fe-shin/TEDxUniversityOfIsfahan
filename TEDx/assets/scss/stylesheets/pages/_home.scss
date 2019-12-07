@@ -81,7 +81,7 @@
   padding: 1.8rem 0;
   border-bottom: 1px solid $light-gray;
   background-color: $base-color;
-  box-shadow: 1px 1px 10px 1px $gray-color;
+  box-shadow: 1px 0px 15px rgba(0, 0, 0, .2);
   z-index: 999;
 }
 
@@ -113,15 +113,15 @@
 
 //description
 .description {
-  margin-top: -20rem;
+  margin-top: -15rem;
   background-color: $description-background-color;
   text-align: center;
-  padding: 22rem 15rem 20rem 20rem;
+  padding: 22rem 15rem 25rem 20rem;
 
   &__paragraph {
     margin-top: 5rem;
     font-family: Diodrum_medium, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-align: center;
 
     p {
@@ -132,32 +132,72 @@
 
 //countdown
 .countdown {
-  padding: 20% 0;
+  padding: 16rem 15rem 30rem 20rem;
   text-align: center;
   background-color: $countdown-background-color;
-  margin-top: -10%;
+  margin-top: -20rem;
   clip-path: polygon(0 21%, 100% 0, 100% 100%, 0% 100%);
 
   &__paragraph {
-    margin-top: 2rem;
+    margin-top: 5rem;
     font-size: 4rem;
-    font-family: Diodrum_extrathin, sans-serif;
+    font-family: Diodrum_extralight, sans-serif;
     display: flex;
     justify-content: center;
+
+    .days::before {
+      content: "Days";
+      font-size: 2.5rem;
+      font-family: Diodrum_light, sans-serif;
+      color: rgb(85, 85, 85);
+      position: absolute;
+      top: 110%;
+    }
+    
+    .hours::before {
+      content: "Hours";
+      font-size: 2.5rem;
+      font-family: Diodrum_light, sans-serif;
+      color: rgb(85, 85, 85);
+      position: absolute;
+      top: 110%;
+    }
+
+    .minutes::before {
+      content: "Minutes";
+      font-size: 2.5rem;
+      font-family: Diodrum_light, sans-serif;
+      color: rgb(85, 85, 85);
+      position: absolute;
+      top: 110%;
+    }
+
+    .seconds::before {
+      content: "Seconds";
+      font-size: 2.5rem;
+      font-family: Diodrum_light, sans-serif;
+      color: rgb(85, 85, 85);
+      position: absolute;
+      top: 110%;
+    }
   }
 
   &__circle {
     width: 15rem;
     height: 15rem;
     background-color: white;
+    font-family: SF, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 100%;
+    box-shadow: 0 0 7px rgba(0, 0, 0, .2);
+    position: relative;
 
     &:not(:last-child) {
       margin-right: 2rem;
     }
+
   }
 }
 
