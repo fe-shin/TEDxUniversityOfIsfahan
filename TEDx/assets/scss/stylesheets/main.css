@@ -547,40 +547,54 @@ html {
   position: relative;
   background: transparent;
   display: flex;
+  height: 20rem;
+  width: 20rem;
   justify-content: center;
   align-items: center;
   transition: all 0.5s ease-in-out;
-  font-size: 1.8rem; }
+  font-size: 1.8rem;
+  clip-path: circle(50% at 50% 50%);
+  shape-outside: circle(50% at 50% 50%);
+  margin-bottom: 2rem;
+  overflow: hidden; }
   .speakers__people_person_image_overlay .icons {
     position: absolute;
     top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     opacity: 0;
     visibility: hidden;
-    transition: all .2s ease-in-out; }
+    transition: all .3s ease-in-out;
+    backface-visibility: hidden; }
     .speakers__people_person_image_overlay .icons > *:not(:last-child) {
       margin-right: 1rem; }
+    .speakers__people_person_image_overlay .icons .socialIcon {
+      color: white; }
+      .speakers__people_person_image_overlay .icons .socialIcon:link, .speakers__people_person_image_overlay .icons .socialIcon:visited {
+        color: white; }
 
 .speakers__people {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: center; }
 
 .speakers__people_person {
-  flex: 0 0 33.33%;
-  margin: 2rem 0;
+  margin: 5rem;
   position: relative; }
   .speakers__people_person:hover .icons {
     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     opacity: 1;
     visibility: visible; }
-  .speakers__people_person:hover .icons {
-    top: 50%;
-    opacity: 1;
-    visibility: visible; }
+  .speakers__people_person:hover .speakers__people_person_image {
+    transform: scale(1.2);
+    filter: blur(5px) brightness(0.8); }
 
 .speakers__people_person_image {
-  clip-path: circle(50% at 50% 50%);
-  shape-outside: circle(50%);
-  margin-bottom: 2rem; }
+  transform: scale(1.5);
+  transition: all .3s ease-in-out;
+  backface-visibility: hidden; }
 
 .speakers__people_person_name {
   margin-bottom: 1rem; }
