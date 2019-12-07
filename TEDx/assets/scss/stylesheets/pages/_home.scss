@@ -203,7 +203,7 @@
 
 //speakers
 .speakers {
-  padding: 10% 0;
+  padding: 16rem 0 15rem 0;
   text-align: center;
   background-color: $description-background-color;
   margin-top: -10%;
@@ -292,8 +292,9 @@
 //what
 .what {
   text-align: center;
-  padding: 5% 0 20% 0;
+  padding: 16rem 15rem 30rem 20rem;
   background-color: $what-background-color;
+  margin-top: -13rem;
 }
 
 .what__explain {
@@ -320,6 +321,8 @@
   text-align: center;
   padding: 15% 0 10% 0;
   clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+  margin-top: -20rem;
+  margin-bottom: 22rem;
 }
 
 .team__members {
