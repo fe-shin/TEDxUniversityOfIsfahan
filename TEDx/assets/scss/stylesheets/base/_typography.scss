@@ -48,12 +48,12 @@
 .what__explain_ted_title,
 .what__explain_tedx_title,
 .what__about_title {
-  @include typographyStyle($sf-regular, 2rem, 400, $black-color, 1.5);
+  @include typographyStyle($sf-regular, 3.25rem, 400, $black-color, 1.5);
 }
 
 .what__explain_ted_text,
 .what__explain_tedx_text {
-  @include typographyStyle($sf-regular, 1rem, 400, $black-color, 1.5);
+  @include typographyStyle($sf-regular, 1.6rem, 400, $black-color, 1.5);
 }
 
 //team

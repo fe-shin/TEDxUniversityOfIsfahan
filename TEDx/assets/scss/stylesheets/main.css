@@ -22,7 +22,7 @@ html {
   margin: 0 auto; }
 
 .container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto; }
 
 .sticky {
@@ -133,7 +133,7 @@ html {
 .what__explain_tedx_title,
 .what__about_title {
   font-family: Diodrum_regular;
-  font-size: 2rem;
+  font-size: 3.25rem;
   font-weight: 400;
   line-height: 1.5;
   color: black; }
@@ -141,7 +141,7 @@ html {
 .what__explain_ted_text,
 .what__explain_tedx_text {
   font-family: Diodrum_regular;
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.5;
   color: black; }
@@ -612,7 +612,7 @@ html {
 
 .what {
   text-align: center;
-  padding: 16rem 15rem 30rem 20rem;
+  padding: 16rem 10rem 30rem 10rem;
   background-color: #FFFFFF;
   margin-top: -13rem; }
 
