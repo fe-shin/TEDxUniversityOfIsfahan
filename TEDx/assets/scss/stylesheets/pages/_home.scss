@@ -206,7 +206,7 @@
   padding: 16rem 0 15rem 0;
   text-align: center;
   background-color: $description-background-color;
-  margin-top: -10%;
+  margin-top: -14rem;
   clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
   
 }
@@ -262,7 +262,7 @@
   position: relative;
 
   &:hover .icons {
-    top: 50%;
+    top: 86%;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 1;
@@ -271,12 +271,14 @@
 
   &:hover .speakers__people_person_image {
     transform: scale(1.2);
-    filter: blur(5px) brightness(.8);
+    filter: blur(1px) brightness(.9);
   }
 }
 
 .speakers__people_person_image {
-  transform: scale(1.5);
+  height: 20rem;
+  width: 20rem;
+  transform: scale(1.5) translate(0, 2rem);
   transition: all .3s ease-in-out;
   backface-visibility: hidden;
 }
@@ -319,25 +321,81 @@
 .team {
   background-color: $description-background-color;
   text-align: center;
-  padding: 15% 0 10% 0;
+  padding: 16rem 0 15rem 0;
   clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
   margin-top: -20rem;
   margin-bottom: 22rem;
 }
 
+.team__members_member_image_overlay {
+  position: relative;
+  background: transparent;
+  display: flex;
+  height: 20rem;
+  width: 20rem;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+  font-size: 1.8rem;
+  clip-path: circle(50% at 50% 50%);
+  shape-outside: circle(50% at 50% 50%);
+  margin-bottom: 2rem;
+  overflow: hidden;
+
+ .icons {
+   position: absolute;
+   top: 100%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   opacity: 0;
+   visibility: hidden;
+   transition: all .3s ease-in-out;
+   backface-visibility: hidden;
+
+   & > *:not(:last-child) {
+     margin-right: 1rem;
+   }
+
+   .socialIcon {
+     color: white;
+
+     &:link, &:visited {
+      color: white;
+     }
+   }
+ }
+
+}
+
 .team__members {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 5%;
+  justify-content: center;
+  margin-top: 5rem;
 }
 
 .team__members_member {
-  flex-basis: 20%;
-  margin: 3% 0;
-  padding: 0 1%;
+  margin: 5rem;
+  position: relative;
+
+  &:hover .icons {
+    top: 86%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:hover .team__members_member_image {
+    transform: scale(1.2);
+    filter: blur(1px) brightness(.9);
+  }
 }
 
 .team__members_member_image {
-  clip-path: circle(50% at 50% 50%);
-  margin-bottom: 10%;
+  height: 20rem;
+  width: 20rem;
+  transform: scale(1.5) translate(0, 2rem);
+  transition: all .3s ease-in-out;
+  backface-visibility: hidden;
 }
