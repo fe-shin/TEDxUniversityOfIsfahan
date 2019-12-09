@@ -17,524 +17,550 @@
     <body>
         <!-- TODO:shadows under each clip path -->
         <!-- navbar -->
-        <nav class="navbar">
-            <div class="navbar__container">
-                <div class="navbar__brand">
-                    <img class="navbar__brand_icon" src="assets/img/11.png" alt="">
-                </div>
+        <div class="openingMenu">
+            <ul class="openingMenu__list">
+                <a class="openingMenu__close">&times;</a>
+                <li class="openingMenu__item">
+                    <a class="openingMenu__link" href="#">Home</a>
+                </li>
+                <li class="openingMenu__item">
+                    <a class="openingMenu__link" href="#">The Speakers</a>
+                </li>
+                <li class="openingMenu__item">
+                    <a class="openingMenu__link" href="#">Our Team</a>
+                </li>
+                <li class="openingMenu__item">
+                    <a class="openingMenu__link" href="#">Sponsors</a>
+                </li>
+            </ul>
+        </div>
 
-                <div class="navbar__menu">
-                    <ul class="navbar__menu_list">
-                        <li class="navbar__menu_list_item"><a href="#" class="navbar__menu_list_item_link">Home</a></li>
-                        <li class="navbar__menu_list_item"><a href="#" class="navbar__menu_list_item_link">The Speakers</a>
-                        </li>
-                        <li class="navbar__menu_list_item"><a href="#" class="navbar__menu_list_item_link">Our Team</a>
-                        </li>
-                        <li class="navbar__menu_list_item"><a href="#" class="navbar__menu_list_item_link">Sponsors</a></li>
-                    </ul>
-                </div>
+        <div class="mainWhole">
 
-                <div class="navbar__buttons">
-                    <a href="#registerPopUp" class="navbar__register">
-                        Register
-                    </a>
-                    <a href="#" class="navbar__lang">
-                        FA
-                    </a>
-                </div>
-
-            </div>
-        </nav>
-
-        <!-- header -->
-        <header class="header">
-            <div class="header__container">
-
-            </div>
-        </header>
-
-        <!-- sticky navbar -->
-        <nav class="stickyNavbar hidden">
-            <div class="navbar__container">
-                <div class="stickyNavbar__brand">
-                    <img src="assets/img/logo_black.png" alt="">
-                </div>
-                <div class="stickyNavbar__menu">
-                    <ul class="stickyNavbar__menu_list">
-                        <li class="stickyNavbar__menu_list_item"><a href="#"
-                                class="stickyNavbar__menu_list_item_link">Home</a></li>
-                        <li class="stickyNavbar__menu_list_item"><a href="#"
-                                class="stickyNavbar__menu_list_item_link">The Speakers</a></li>
-                        <li class="stickyNavbar__menu_list_item"><a href="#"
-                                class="stickyNavbar__menu_list_item_link">Our Team</a></li>
-                        <li class="stickyNavbar__menu_list_item"><a href="#"
-                                class="stickyNavbar__menu_list_item_link">Sponsors</a></li>
-                    </ul>
-                </div>
-
-                <div class="stickyNavbar__buttons">
-                    <a href="#registerPopUp" class="navbar__register">
-                        Register
-                    </a>
-                    <a href="#" class="navbar__lang">
-                        FA
-                    </a>
-                </div>
-
-            </div>
-        </nav>
-
-        <!-- description -->
-        <section class="description">
-            <div class="container">
-                <h2 class="description__title">Hello New World</h2>
-                <span class="underline_red"></span>
-                <span class="underline_black"></span>
-            </div>
-            <div class="description__paragraph">
-                <p>
-                    Since Brian Kernighan wrote the "hello world" program in 1972 human life has been changed in many ways. For years it was limited to the computer world but now, everything has been changed, in every aspect of our life.
-                    It has been a few years that scientists, researchers, futurists, and almost everyone, talking about a new age that is yet to come. But now, at the edge of 2020; this is not something about tomorrow anymore; It's today! So "hello NEW world"...
-                </p>
-                <p>
-                    At TEDxUniversityOfIsfahan 2019, the first TEDx University event at Esfahan, we want to talk about future challenges and changes. Speakers will share their ideas and thoughts about enturpership to education, from history to philosophy, from architecture to data science. 
-                </p>
-            </div>
-        </section>
-
-        <!-- TODO:writing countdown js code and style -->
-        <!-- countdown -->
-        <section class="countdown">
-            <div class="container">
-                <h2 class="countdown__title">Countdown</h2>
-                <span class="underline_red"></span>
-                <span class="underline_black"></span>
-            </div>
-            <div class="countdown__paragraph">
-                <div class="countdown__circle days" id="days"></div>
-                <div class="countdown__circle hours" id="hours"></div>
-                <div class="countdown__circle minutes" id="minutes"></div>
-                <div class="countdown__circle seconds" id="seconds"></div>
-                <div class="expiredAlert" id="expired"></div>
-            </div>
-        </section>
-
-        <!-- TODO:hover on every speaker -->
-        <!-- speakers -->
-        <section class="speakers">
-            <div class="container">
-                <h2 class="speakers__title">Speakers</h2>
-                <span class="underline_red"></span>
-                <span class="underline_black"></span>
-                <div class="speakers__people">
-                    <div class="speakers__people_person">
-                        <figure class="speakers__people_person_image_overlay">
-                            <img src="assets/img/reza.JPG" alt="" class="speakers__people_person_image">
-                            <figcaption class="icons">
-                                <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
-                                <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
-                            </figcaption>
-                        </figure>
-                        <h3 class="speakers__people_person_name">Farid Shokri</h3>
-                        <p class="speakers__people_person_topic">Blah Blah Blah.</p>
+            <nav class="navbar">
+                <div class="navbar__container">
+                    <div class="navbar__menuButton">
+                        <div class="menuButtonIcon">
+                            <span class="navbar__menuButton_icon-1"></span>
+                            <span class="navbar__menuButton_icon-2"></span>
+                            <span class="navbar__menuButton_icon-3"></span>
+                        </div>
                     </div>
-                    <div class="speakers__people_person">
-                        <figure class="speakers__people_person_image_overlay">
-                            <img src="assets/img/reza.JPG" alt="" class="speakers__people_person_image">
-                            <figcaption class="icons">
-                                <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
-                                <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
-                            </figcaption>
-                        </figure>
-                        <h3 class="speakers__people_person_name">Farid Shokri</h3>
-                        <p class="speakers__people_person_topic">Blah Blah Blah.</p>
-                    </div>
-                    <div class="speakers__people_person">
-                        <figure class="speakers__people_person_image_overlay">
-                            <img src="assets/img/reza.JPG" alt="" class="speakers__people_person_image">
-                            <figcaption class="icons">
-                                <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
-                                <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
-                            </figcaption>
-                        </figure>
-                        <h3 class="speakers__people_person_name">Farid Shokri</h3>
-                        <p class="speakers__people_person_topic">Blah Blah Blah.</p>
-                    </div>
-                    <div class="speakers__people_person">
-                        <figure class="speakers__people_person_image_overlay">
-                            <img src="assets/img/reza.JPG" alt="" class="speakers__people_person_image">
-                            <figcaption class="icons">
-                                <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
-                                <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
-                            </figcaption>
-                        </figure>
-                        <h3 class="speakers__people_person_name">Farid Shokri</h3>
-                        <p class="speakers__people_person_topic">Blah Blah Blah.</p>
-                    </div>
-                    <div class="speakers__people_person">
-                        <figure class="speakers__people_person_image_overlay">
-                            <img src="assets/img/reza.JPG" alt="" class="speakers__people_person_image">
-                            <figcaption class="icons">
-                                <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
-                                <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
-                            </figcaption>
-                        </figure>
-                        <h3 class="speakers__people_person_name">Farid Shokri</h3>
-                        <p class="speakers__people_person_topic">Blah Blah Blah.</p>
-                    </div>
-                    <div class="speakers__people_person">
-                        <figure class="speakers__people_person_image_overlay">
-                            <img src="assets/img/reza.JPG" alt="" class="speakers__people_person_image">
-                            <figcaption class="icons">
-                                <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
-                                <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
-                            </figcaption>
-                        </figure>
-                        <h3 class="speakers__people_person_name">Farid Shokri</h3>
-                        <p class="speakers__people_person_topic">Blah Blah Blah.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- what -->
-        <section class="what">
-            <div class="container">
-                <div class="what__explain">
-                    <div class="what__explain_ted">
-                        <h2 class="what__explain_ted_title">What is TED?</h2>
-                        <span class="underline_red"></span>
-                        <span class="underline_black"></span>
-                        <p class="what__explain_ted_text">
-                            TED (Technology, Entertainment, and Design) is a nonprofit devoted to spreading ideas, usually in the form of short, powerful talks (18 minutes or less). TED began in 1984 as a conference where Technology, Entertainment and Design converged, and today covers almost all topics — from science to business to global issues — in more than 100 languages.
-                        </p>
+                    <div class="navbar__menu">
+                        <ul class="navbar__menu_list">
+                            <li class="navbar__menu_list_item"><a href="#" class="navbar__menu_list_item_link">Home</a></li>
+                            <li class="navbar__menu_list_item"><a href="#" class="navbar__menu_list_item_link">The Speakers</a>
+                            </li>
+                            <li class="navbar__menu_list_item"><a href="#" class="navbar__menu_list_item_link">Our Team</a>
+                            </li>
+                            <li class="navbar__menu_list_item"><a href="#" class="navbar__menu_list_item_link">Sponsors</a></li>
+                        </ul>
                     </div>
-                    <div class="what__explain_tedx">
-                        <h2 class="what__explain_tedx_title">What is TEDx?</h2>
-                        <span class="underline_red"></span>
-                        <span class="underline_black"></span>
-                        <p class="what__explain_tedx_text">
-                            A TEDx event is a local gathering where live TED-like talks and performances are shared with the community. TEDx events are fully planned and coordinated independently, on a community-by-community basis. The content and design of each TEDx event is unique and developed independently, but all of them have features in common.
-                        </p>
+
+                    <div class="navbar__buttons">
+                        <a href="#registerPopUp" class="navbar__register">
+                            Register
+                        </a>
+                        <a href="#" class="navbar__lang">
+                            FA
+                        </a>
                     </div>
+
                 </div>
-                <div class="what__about">
-                    <h2 class="what__about_title">What is TEDx University of Isfahan?</h2>
+            </nav>
+
+            <!-- header -->
+            <header class="header">
+                <div class="header__container">
+
+                </div>
+            </header>
+
+            <!-- sticky navbar -->
+            <nav class="stickyNavbar hidden">
+                <div class="navbar__container">
+                    <div class="stickyNavbar__brand">
+                        <img src="assets/img/logo_black.png" alt="">
+                    </div>
+                    <div class="stickyNavbar__menu">
+                        <ul class="stickyNavbar__menu_list">
+                            <li class="stickyNavbar__menu_list_item"><a href="#"
+                                    class="stickyNavbar__menu_list_item_link">Home</a></li>
+                            <li class="stickyNavbar__menu_list_item"><a href="#"
+                                    class="stickyNavbar__menu_list_item_link">The Speakers</a></li>
+                            <li class="stickyNavbar__menu_list_item"><a href="#"
+                                    class="stickyNavbar__menu_list_item_link">Our Team</a></li>
+                            <li class="stickyNavbar__menu_list_item"><a href="#"
+                                    class="stickyNavbar__menu_list_item_link">Sponsors</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="stickyNavbar__buttons">
+                        <a href="#registerPopUp" class="navbar__register">
+                            Register
+                        </a>
+                        <a href="#" class="navbar__lang">
+                            FA
+                        </a>
+                    </div>
+
+                </div>
+            </nav>
+
+            <!-- description -->
+            <section class="description">
+                <div class="container">
+                    <h2 class="description__title">Hello New World</h2>
                     <span class="underline_red"></span>
                     <span class="underline_black"></span>
-                    <p class="what__about_text">
-
+                </div>
+                <div class="description__paragraph">
+                    <p>
+                        Since Brian Kernighan wrote the "hello world" program in 1972 human life has been changed in many ways. For years it was limited to the computer world but now, everything has been changed, in every aspect of our life.
+                        It has been a few years that scientists, researchers, futurists, and almost everyone, talking about a new age that is yet to come. But now, at the edge of 2020; this is not something about tomorrow anymore; It's today! So "hello NEW world"...
+                    </p>
+                    <p>
+                        At TEDxUniversityOfIsfahan 2019, the first TEDx University event at Esfahan, we want to talk about future challenges and changes. Speakers will share their ideas and thoughts about enturpership to education, from history to philosophy, from architecture to data science. 
                     </p>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- TODO:hover on team members -->
-        <!-- team -->
-        <section class="team">
-            <div class="container">
-                <h2 class="team__title">Our Team</h2>
-                <span class="underline_red"></span>
-                <span class="underline_black"></span>
-                <div class="team__members">
-                    <div class="team__members_member">
-                        <figure class="team__members_member_image_overlay">
-                            <img src="assets/img/1.JPG" alt="" class="team__members_member_image">
-                            <figcaption class="icons">
-                                <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
-                                <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
-                            </figcaption>
-                        </figure>
-                        <h3 class="team__members_member_name">Farid Shokri</h3>
-                        <p class="team__members_member_position">Blah Blah Blah.</p>
-                    </div>
-                    
-                    <div class="team__members_member">
-                        <figure class="team__members_member_image_overlay">
-                            <img src="assets/img/2.JPG" alt="" class="team__members_member_image">
-                            <figcaption class="icons">
-                                <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
-                                <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
-                            </figcaption>
-                        </figure>
-                        <h3 class="team__members_member_name">Farid Shokri</h3>
-                        <p class="team__members_member_position">Blah Blah Blah.</p>
-                    </div>
-
-                    <div class="team__members_member">
-                        <figure class="team__members_member_image_overlay">
-                            <img src="assets/img/3.JPG" alt="" class="team__members_member_image">
-                            <figcaption class="icons">
-                                <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
-                                <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
-                            </figcaption>
-                        </figure>
-                        <h3 class="team__members_member_name">Farid Shokri</h3>
-                        <p class="team__members_member_position">Blah Blah Blah.</p>
-                    </div>
-
-                    <div class="team__members_member">
-                        <figure class="team__members_member_image_overlay">
-                            <img src="assets/img/4.JPG" alt="" class="team__members_member_image">
-                            <figcaption class="icons">
-                                <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
-                                <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
-                            </figcaption>
-                        </figure>
-                        <h3 class="team__members_member_name">Farid Shokri</h3>
-                        <p class="team__members_member_position">Blah Blah Blah.</p>
-                    </div>
-
-                    <div class="team__members_member">
-                        <figure class="team__members_member_image_overlay">
-                            <img src="assets/img/5.JPG" alt="" class="team__members_member_image">
-                            <figcaption class="icons">
-                                <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
-                                <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
-                            </figcaption>
-                        </figure>
-                        <h3 class="team__members_member_name">Farid Shokri</h3>
-                        <p class="team__members_member_position">Blah Blah Blah.</p>
-                    </div>
-
-                    <div class="team__members_member">
-                        <figure class="team__members_member_image_overlay">
-                            <img src="assets/img/6.JPG" alt="" class="team__members_member_image">
-                            <figcaption class="icons">
-                                <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
-                                <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
-                            </figcaption>
-                        </figure>
-                        <h3 class="team__members_member_name">Farid Shokri</h3>
-                        <p class="team__members_member_position">Blah Blah Blah.</p>
-                    </div>
-
-                    <div class="team__members_member">
-                        <figure class="team__members_member_image_overlay">
-                            <img src="assets/img/7.JPG" alt="" class="team__members_member_image">
-                            <figcaption class="icons">
-                                <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
-                                <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
-                            </figcaption>
-                        </figure>
-                        <h3 class="team__members_member_name">Farid Shokri</h3>
-                        <p class="team__members_member_position">Blah Blah Blah.</p>
-                    </div>
-
-                    <div class="team__members_member">
-                        <figure class="team__members_member_image_overlay">
-                            <img src="assets/img/8.JPG" alt="" class="team__members_member_image">
-                            <figcaption class="icons">
-                                <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
-                                <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
-                            </figcaption>
-                        </figure>
-                        <h3 class="team__members_member_name">Farid Shokri</h3>
-                        <p class="team__members_member_position">Blah Blah Blah.</p>
-                    </div>
-
-                    <div class="team__members_member">
-                        <figure class="team__members_member_image_overlay">
-                            <img src="assets/img/9.JPG" alt="" class="team__members_member_image">
-                            <figcaption class="icons">
-                                <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
-                                <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
-                            </figcaption>
-                        </figure>
-                        <h3 class="team__members_member_name">Farid Shokri</h3>
-                        <p class="team__members_member_position">Blah Blah Blah.</p>
-                    </div>
-
-                    <div class="team__members_member">
-                        <figure class="team__members_member_image_overlay">
-                            <img src="assets/img/10.JPG" alt="" class="team__members_member_image">
-                            <figcaption class="icons">
-                                <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
-                                <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
-                            </figcaption>
-                        </figure>
-                        <h3 class="team__members_member_name">Farid Shokri</h3>
-                        <p class="team__members_member_position">Blah Blah Blah.</p>
-                    </div>
-
-                    <div class="team__members_member">
-                        <figure class="team__members_member_image_overlay">
-                            <img src="assets/img/11.JPG" alt="" class="team__members_member_image">
-                            <figcaption class="icons">
-                                <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
-                                <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
-                            </figcaption>
-                        </figure>
-                        <h3 class="team__members_member_name">Farid Shokri</h3>
-                        <p class="team__members_member_position">Blah Blah Blah.</p>
-                    </div>
-
-                    <div class="team__members_member">
-                        <figure class="team__members_member_image_overlay">
-                            <img src="assets/img/12.JPG" alt="" class="team__members_member_image">
-                            <figcaption class="icons">
-                                <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
-                                <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
-                            </figcaption>
-                        </figure>
-                        <h3 class="team__members_member_name">Farid Shokri</h3>
-                        <p class="team__members_member_position">Blah Blah Blah.</p>
-                    </div>
-
-                    <div class="team__members_member">
-                        <figure class="team__members_member_image_overlay">
-                            <img src="assets/img/13.JPG" alt="" class="team__members_member_image">
-                            <figcaption class="icons">
-                                <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
-                                <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
-                            </figcaption>
-                        </figure>
-                        <h3 class="team__members_member_name">Farid Shokri</h3>
-                        <p class="team__members_member_position">Blah Blah Blah.</p>
-                    </div>
-
-                    <div class="team__members_member">
-                        <figure class="team__members_member_image_overlay">
-                            <img src="assets/img/14.JPG" alt="" class="team__members_member_image">
-                            <figcaption class="icons">
-                                <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
-                                <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
-                            </figcaption>
-                        </figure>
-                        <h3 class="team__members_member_name">Farid Shokri</h3>
-                        <p class="team__members_member_position">Blah Blah Blah.</p>
-                    </div>
-
-                    <div class="team__members_member">
-                        <figure class="team__members_member_image_overlay">
-                            <img src="assets/img/15.JPG" alt="" class="team__members_member_image">
-                            <figcaption class="icons">
-                                <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
-                                <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
-                            </figcaption>
-                        </figure>
-                        <h3 class="team__members_member_name">Farid Shokri</h3>
-                        <p class="team__members_member_position">Blah Blah Blah.</p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- TODO:use font awesome for socials -->
-        <!-- footer -->
-        <footer class="footer">
-            <div class="container">
-                <ul class="footer__socials">
-                    <li class="footer__socials_item">
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li class="footer__socials_item">
-                        <a href="#"><i class="fa fa-telegram"></i></a>
-                    </li>
-                    <li class="footer__socials_item">
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                    </li>
-                </ul>
-                <a href="#" class="footer__link">Send Us Your Email</a>
-                <p class="footer__copyright">
-                    This independent TEDx event is operated under license from TED. | Copyright &copy; 2019
-                    TEDxUniversityOfIsfahan | All Rights Reserved.
-                </p>
-            </div>
-        </footer>
-
-        <div class="registerPopUp" id="registerPopUp">
-            <div class="registerPopUp__content">
-                <a class="registerPopUp__closebtn" href="#"><i class="fa fa-remove"></i></a>
-
+            <!-- TODO:writing countdown js code and style -->
+            <!-- countdown -->
+            <section class="countdown">
                 <div class="container">
-                    <h2 class="description__title">Register</h2>
+                    <h2 class="countdown__title">Countdown</h2>
                     <span class="underline_red"></span>
                     <span class="underline_black"></span>
                 </div>
-                
-                <form action="#" class="form" method="post">
+                <div class="countdown__paragraph">
+                    <div class="countdown__circle days" id="days"></div>
+                    <div class="countdown__circle hours" id="hours"></div>
+                    <div class="countdown__circle minutes" id="minutes"></div>
+                    <div class="countdown__circle seconds" id="seconds"></div>
+                    <div class="expiredAlert" id="expired"></div>
+                </div>
+            </section>
 
-                    <div class="form__group">
-                        <input type="text" class="form__input" placeholder="Full Name" id="name" required>
-                        <label for="name" class="form__label">Full Name</label>
+            <!-- TODO:hover on every speaker -->
+            <!-- speakers -->
+            <section class="speakers">
+                <div class="container">
+                    <h2 class="speakers__title">Speakers</h2>
+                    <span class="underline_red"></span>
+                    <span class="underline_black"></span>
+                    <div class="speakers__people">
+                        <div class="speakers__people_person">
+                            <figure class="speakers__people_person_image_overlay">
+                                <img src="assets/img/reza.JPG" alt="" class="speakers__people_person_image">
+                                <figcaption class="icons">
+                                    <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
+                                    <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
+                                </figcaption>
+                            </figure>
+                            <h3 class="speakers__people_person_name">Farid Shokri</h3>
+                            <p class="speakers__people_person_topic">Blah Blah Blah.</p>
+                        </div>
+                        <div class="speakers__people_person">
+                            <figure class="speakers__people_person_image_overlay">
+                                <img src="assets/img/reza.JPG" alt="" class="speakers__people_person_image">
+                                <figcaption class="icons">
+                                    <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
+                                    <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
+                                </figcaption>
+                            </figure>
+                            <h3 class="speakers__people_person_name">Farid Shokri</h3>
+                            <p class="speakers__people_person_topic">Blah Blah Blah.</p>
+                        </div>
+                        <div class="speakers__people_person">
+                            <figure class="speakers__people_person_image_overlay">
+                                <img src="assets/img/reza.JPG" alt="" class="speakers__people_person_image">
+                                <figcaption class="icons">
+                                    <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
+                                    <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
+                                </figcaption>
+                            </figure>
+                            <h3 class="speakers__people_person_name">Farid Shokri</h3>
+                            <p class="speakers__people_person_topic">Blah Blah Blah.</p>
+                        </div>
+                        <div class="speakers__people_person">
+                            <figure class="speakers__people_person_image_overlay">
+                                <img src="assets/img/reza.JPG" alt="" class="speakers__people_person_image">
+                                <figcaption class="icons">
+                                    <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
+                                    <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
+                                </figcaption>
+                            </figure>
+                            <h3 class="speakers__people_person_name">Farid Shokri</h3>
+                            <p class="speakers__people_person_topic">Blah Blah Blah.</p>
+                        </div>
+                        <div class="speakers__people_person">
+                            <figure class="speakers__people_person_image_overlay">
+                                <img src="assets/img/reza.JPG" alt="" class="speakers__people_person_image">
+                                <figcaption class="icons">
+                                    <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
+                                    <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
+                                </figcaption>
+                            </figure>
+                            <h3 class="speakers__people_person_name">Farid Shokri</h3>
+                            <p class="speakers__people_person_topic">Blah Blah Blah.</p>
+                        </div>
+                        <div class="speakers__people_person">
+                            <figure class="speakers__people_person_image_overlay">
+                                <img src="assets/img/reza.JPG" alt="" class="speakers__people_person_image">
+                                <figcaption class="icons">
+                                    <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
+                                    <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
+                                </figcaption>
+                            </figure>
+                            <h3 class="speakers__people_person_name">Farid Shokri</h3>
+                            <p class="speakers__people_person_topic">Blah Blah Blah.</p>
+                        </div>
                     </div>
+                </div>
+            </section>
 
-                    <div class="form__group">
-                        <input type="email" class="form__input" placeholder="Email Address" id="email" required>
-                        <label for="email" class="form__label">Email Address</label>
+            <!-- what -->
+            <section class="what">
+                <div class="container">
+                    <div class="what__explain">
+                        <div class="what__explain_ted">
+                            <h2 class="what__explain_ted_title">What is TED?</h2>
+                            <span class="underline_red"></span>
+                            <span class="underline_black"></span>
+                            <p class="what__explain_ted_text">
+                                TED (Technology, Entertainment, and Design) is a nonprofit devoted to spreading ideas, usually in the form of short, powerful talks (18 minutes or less). TED began in 1984 as a conference where Technology, Entertainment and Design converged, and today covers almost all topics — from science to business to global issues — in more than 100 languages.
+                            </p>
+                        </div>
+                        <div class="what__explain_tedx">
+                            <h2 class="what__explain_tedx_title">What is TEDx?</h2>
+                            <span class="underline_red"></span>
+                            <span class="underline_black"></span>
+                            <p class="what__explain_tedx_text">
+                                A TEDx event is a local gathering where live TED-like talks and performances are shared with the community. TEDx events are fully planned and coordinated independently, on a community-by-community basis. The content and design of each TEDx event is unique and developed independently, but all of them have features in common.
+                            </p>
+                        </div>
                     </div>
+                    <div class="what__about">
+                        <h2 class="what__about_title">What is TEDx University of Isfahan?</h2>
+                        <span class="underline_red"></span>
+                        <span class="underline_black"></span>
+                        <p class="what__about_text">
 
-                    <div class="form__group">
-                        <input type="text" class="form__input" placeholder="Phone Number" id="phone" required>
-                        <label for="phone" class="form__label">Phone Number</label>
+                        </p>
                     </div>
+                </div>
+            </section>
 
-                    <div class="form__group">
-                        <input type="text" class="form__input" placeholder="Career" id="career" required>
-                        <label for="career" class="form__label">Career</label>
+            <!-- TODO:hover on team members -->
+            <!-- team -->
+            <section class="team">
+                <div class="container">
+                    <h2 class="team__title">Our Team</h2>
+                    <span class="underline_red"></span>
+                    <span class="underline_black"></span>
+                    <div class="team__members">
+                        <div class="team__members_member">
+                            <figure class="team__members_member_image_overlay">
+                                <img src="assets/img/1.JPG" alt="" class="team__members_member_image">
+                                <figcaption class="icons">
+                                    <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
+                                    <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
+                                </figcaption>
+                            </figure>
+                            <h3 class="team__members_member_name">Farid Shokri</h3>
+                            <p class="team__members_member_position">Blah Blah Blah.</p>
+                        </div>
+                        
+                        <div class="team__members_member">
+                            <figure class="team__members_member_image_overlay">
+                                <img src="assets/img/2.JPG" alt="" class="team__members_member_image">
+                                <figcaption class="icons">
+                                    <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
+                                    <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
+                                </figcaption>
+                            </figure>
+                            <h3 class="team__members_member_name">Farid Shokri</h3>
+                            <p class="team__members_member_position">Blah Blah Blah.</p>
+                        </div>
+
+                        <div class="team__members_member">
+                            <figure class="team__members_member_image_overlay">
+                                <img src="assets/img/3.JPG" alt="" class="team__members_member_image">
+                                <figcaption class="icons">
+                                    <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
+                                    <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
+                                </figcaption>
+                            </figure>
+                            <h3 class="team__members_member_name">Farid Shokri</h3>
+                            <p class="team__members_member_position">Blah Blah Blah.</p>
+                        </div>
+
+                        <div class="team__members_member">
+                            <figure class="team__members_member_image_overlay">
+                                <img src="assets/img/4.JPG" alt="" class="team__members_member_image">
+                                <figcaption class="icons">
+                                    <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
+                                    <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
+                                </figcaption>
+                            </figure>
+                            <h3 class="team__members_member_name">Farid Shokri</h3>
+                            <p class="team__members_member_position">Blah Blah Blah.</p>
+                        </div>
+
+                        <div class="team__members_member">
+                            <figure class="team__members_member_image_overlay">
+                                <img src="assets/img/5.JPG" alt="" class="team__members_member_image">
+                                <figcaption class="icons">
+                                    <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
+                                    <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
+                                </figcaption>
+                            </figure>
+                            <h3 class="team__members_member_name">Farid Shokri</h3>
+                            <p class="team__members_member_position">Blah Blah Blah.</p>
+                        </div>
+
+                        <div class="team__members_member">
+                            <figure class="team__members_member_image_overlay">
+                                <img src="assets/img/6.JPG" alt="" class="team__members_member_image">
+                                <figcaption class="icons">
+                                    <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
+                                    <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
+                                </figcaption>
+                            </figure>
+                            <h3 class="team__members_member_name">Farid Shokri</h3>
+                            <p class="team__members_member_position">Blah Blah Blah.</p>
+                        </div>
+
+                        <div class="team__members_member">
+                            <figure class="team__members_member_image_overlay">
+                                <img src="assets/img/7.JPG" alt="" class="team__members_member_image">
+                                <figcaption class="icons">
+                                    <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
+                                    <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
+                                </figcaption>
+                            </figure>
+                            <h3 class="team__members_member_name">Farid Shokri</h3>
+                            <p class="team__members_member_position">Blah Blah Blah.</p>
+                        </div>
+
+                        <div class="team__members_member">
+                            <figure class="team__members_member_image_overlay">
+                                <img src="assets/img/8.JPG" alt="" class="team__members_member_image">
+                                <figcaption class="icons">
+                                    <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
+                                    <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
+                                </figcaption>
+                            </figure>
+                            <h3 class="team__members_member_name">Farid Shokri</h3>
+                            <p class="team__members_member_position">Blah Blah Blah.</p>
+                        </div>
+
+                        <div class="team__members_member">
+                            <figure class="team__members_member_image_overlay">
+                                <img src="assets/img/9.JPG" alt="" class="team__members_member_image">
+                                <figcaption class="icons">
+                                    <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
+                                    <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
+                                </figcaption>
+                            </figure>
+                            <h3 class="team__members_member_name">Farid Shokri</h3>
+                            <p class="team__members_member_position">Blah Blah Blah.</p>
+                        </div>
+
+                        <div class="team__members_member">
+                            <figure class="team__members_member_image_overlay">
+                                <img src="assets/img/10.JPG" alt="" class="team__members_member_image">
+                                <figcaption class="icons">
+                                    <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
+                                    <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
+                                </figcaption>
+                            </figure>
+                            <h3 class="team__members_member_name">Farid Shokri</h3>
+                            <p class="team__members_member_position">Blah Blah Blah.</p>
+                        </div>
+
+                        <div class="team__members_member">
+                            <figure class="team__members_member_image_overlay">
+                                <img src="assets/img/11.JPG" alt="" class="team__members_member_image">
+                                <figcaption class="icons">
+                                    <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
+                                    <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
+                                </figcaption>
+                            </figure>
+                            <h3 class="team__members_member_name">Farid Shokri</h3>
+                            <p class="team__members_member_position">Blah Blah Blah.</p>
+                        </div>
+
+                        <div class="team__members_member">
+                            <figure class="team__members_member_image_overlay">
+                                <img src="assets/img/12.JPG" alt="" class="team__members_member_image">
+                                <figcaption class="icons">
+                                    <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
+                                    <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
+                                </figcaption>
+                            </figure>
+                            <h3 class="team__members_member_name">Farid Shokri</h3>
+                            <p class="team__members_member_position">Blah Blah Blah.</p>
+                        </div>
+
+                        <div class="team__members_member">
+                            <figure class="team__members_member_image_overlay">
+                                <img src="assets/img/13.JPG" alt="" class="team__members_member_image">
+                                <figcaption class="icons">
+                                    <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
+                                    <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
+                                </figcaption>
+                            </figure>
+                            <h3 class="team__members_member_name">Farid Shokri</h3>
+                            <p class="team__members_member_position">Blah Blah Blah.</p>
+                        </div>
+
+                        <div class="team__members_member">
+                            <figure class="team__members_member_image_overlay">
+                                <img src="assets/img/14.JPG" alt="" class="team__members_member_image">
+                                <figcaption class="icons">
+                                    <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
+                                    <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
+                                </figcaption>
+                            </figure>
+                            <h3 class="team__members_member_name">Farid Shokri</h3>
+                            <p class="team__members_member_position">Blah Blah Blah.</p>
+                        </div>
+
+                        <div class="team__members_member">
+                            <figure class="team__members_member_image_overlay">
+                                <img src="assets/img/15.JPG" alt="" class="team__members_member_image">
+                                <figcaption class="icons">
+                                    <a class="socialIcon" href="#"><i class="fa fa-instagram"></i></a>
+                                    <a class="socialIcon" href="#"><i class="fa fa-linkedin-square"></i></a>
+                                </figcaption>
+                            </figure>
+                            <h3 class="team__members_member_name">Farid Shokri</h3>
+                            <p class="team__members_member_position">Blah Blah Blah.</p>
+                        </div>
+
                     </div>
+                </div>
+            </section>
+            <!-- TODO:use font awesome for socials -->
+            <!-- footer -->
+            <footer class="footer">
+                <div class="container">
+                    <ul class="footer__socials">
+                        <li class="footer__socials_item">
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li class="footer__socials_item">
+                            <a href="#"><i class="fa fa-telegram"></i></a>
+                        </li>
+                        <li class="footer__socials_item">
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                    <a href="#" class="footer__link">Send Us Your Email</a>
+                    <p class="footer__copyright">
+                        This independent TEDx event is operated under license from TED. | Copyright &copy; 2019
+                        TEDxUniversityOfIsfahan | All Rights Reserved.
+                    </p>
+                </div>
+            </footer>
 
-                    <div class="form__group">
-                        <input type="text" class="form__input" placeholder="Degree" id="degree" required>
-                        <label for="degree" class="form__label">Degree</label>
-                    </div>
+            <div class="registerPopUp" id="registerPopUp">
+                <div class="registerPopUp__content">
+                    <a class="registerPopUp__closebtn" href="#"><i class="fa fa-remove"></i></a>
 
-                    <div class="form__group">
-                        <input type="text" class="form__input" placeholder="School" id="school" required>
-                        <label for="school" class="form__label">School</label>
-                    </div>
-
-                    <div class="form__group">
-                        <input type="text" class="form__input" placeholder="Field of Study" id="study" required>
-                        <label for="study" class="form__label">Field of Study</label>
+                    <div class="container">
+                        <h2 class="description__title">Register</h2>
+                        <span class="underline_red"></span>
+                        <span class="underline_black"></span>
                     </div>
                     
-                    <div class="form__group--double">
+                    <form action="#" class="form" method="post">
+
                         <div class="form__group">
-                            <input type="number" class="form__input" placeholder="Start Year" id="start" required>
-                            <label for="start" class="form__label">Start Year</label>
+                            <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                            <label for="name" class="form__label">Full Name</label>
                         </div>
+
                         <div class="form__group">
-                            <input type="number" class="form__input" placeholder="End Year (or expected)" id="end" required>
-                            <label for="end" class="form__label">End Year (or expected)</label>
+                            <input type="email" class="form__input" placeholder="Email Address" id="email" required>
+                            <label for="email" class="form__label">Email Address</label>
                         </div>
-                    </div>
 
-                    <div class="form__group">
-                        <label class="form__label--2" for="msg1">Have you ever attended to a TEDx event? If you answered yes, what was the event?
-                        </label>
-                        <textarea onfocus="this.value = ''" class="form__textarea" id="msg1" required>Have you ever attended in a TEDx event? If you answered yes, what was the event?
-                        </textarea>
-                    </div>
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder="Phone Number" id="phone" required>
+                            <label for="phone" class="form__label">Phone Number</label>
+                        </div>
 
-                    <div class="form__group">
-                        <label class="form__label--2" for="msg2">What made you attend to TEDxUniversityOfIsfahan?
-                        </label>
-                        <textarea  onfocus="this.value = ''" class="form__textarea" id="msg2" required>What made you attend to TEDxUniversityOfIsfahan?
-                        </textarea>
-                    </div>
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder="Career" id="career" required>
+                            <label for="career" class="form__label">Career</label>
+                        </div>
 
-                    <div class="form__group">
-                        <label class="form__label--2" for="msg3">How familiar are you with TEDx and its speakers? 
-                        </label>
-                        <textarea  onfocus="this.value = ''" class="form__textarea" id="msg3" required>How familiar are you with TEDx and its speakers? 
-                        </textarea>
-                    </div>
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder="Degree" id="degree" required>
+                            <label for="degree" class="form__label">Degree</label>
+                        </div>
 
-                    <div class="form__group">
-                        <label class="form__label--2" for="msg4">What are your expectations of the TEDxUniversityOfIsfahan's speeches? 
-                        </label>
-                        <textarea  onfocus="this.value = ''" class="form__textarea" id="msg4" required>What are your expectations of the TEDxUniversityOfIsfahan's speeches? 
-                        </textarea>
-                    </div>
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder="School" id="school" required>
+                            <label for="school" class="form__label">School</label>
+                        </div>
 
-                    <div class="form__group--button">
-                        <button class="navbar__register">Register</button>
-                    </div>
-                </form>
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder="Field of Study" id="study" required>
+                            <label for="study" class="form__label">Field of Study</label>
+                        </div>
+                        
+                        <div class="form__group--double">
+                            <div class="form__group">
+                                <input type="number" class="form__input" placeholder="Start Year" id="start" required>
+                                <label for="start" class="form__label">Start Year</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="number" class="form__input" placeholder="End Year (or expected)" id="end" required>
+                                <label for="end" class="form__label">End Year (or expected)</label>
+                            </div>
+                        </div>
 
+                        <div class="form__group">
+                            <label class="form__label--2" for="msg1">Have you ever attended to a TEDx event? If you answered yes, what was the event?
+                            </label>
+                            <textarea onfocus="this.value = ''" class="form__textarea" id="msg1" required>Have you ever attended in a TEDx event? If you answered yes, what was the event?
+                            </textarea>
+                        </div>
+
+                        <div class="form__group">
+                            <label class="form__label--2" for="msg2">What made you attend to TEDxUniversityOfIsfahan?
+                            </label>
+                            <textarea  onfocus="this.value = ''" class="form__textarea" id="msg2" required>What made you attend to TEDxUniversityOfIsfahan?
+                            </textarea>
+                        </div>
+
+                        <div class="form__group">
+                            <label class="form__label--2" for="msg3">How familiar are you with TEDx and its speakers? 
+                            </label>
+                            <textarea  onfocus="this.value = ''" class="form__textarea" id="msg3" required>How familiar are you with TEDx and its speakers? 
+                            </textarea>
+                        </div>
+
+                        <div class="form__group">
+                            <label class="form__label--2" for="msg4">What are your expectations of the TEDxUniversityOfIsfahan's speeches? 
+                            </label>
+                            <textarea  onfocus="this.value = ''" class="form__textarea" id="msg4" required>What are your expectations of the TEDxUniversityOfIsfahan's speeches? 
+                            </textarea>
+                        </div>
+
+                        <div class="form__group--button">
+                            <button class="navbar__register">Register</button>
+                        </div>
+                    </form>
+
+                </div>
             </div>
+
         </div>
 
         <script src="assets/js/rellax.min.js"></script>

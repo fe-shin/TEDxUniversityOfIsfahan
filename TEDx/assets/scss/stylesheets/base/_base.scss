@@ -9,6 +9,22 @@
 
 html {
   font-size: 62.5%; //10 px
+
+  @media only screen and (min-width: 120em) {
+    font-size: 93.75%;
+  } 
+
+  @media only screen and (max-width: 62.5em) {
+    font-size: 56.25%;
+  }
+
+  @media only screen and (max-width: 53.25em) {
+    font-size: 43.75%;
+  }
+}
+
+body {
+  transition: all .2s;
 }
 
 .navbar__container {
