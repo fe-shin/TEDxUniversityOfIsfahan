@@ -248,7 +248,7 @@ body {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 23rem;
+  height: 22rem;
   padding: 2rem 0;
   background-color: black;
   text-align: center;
@@ -275,7 +275,7 @@ body {
   padding: 1rem 3rem;
   border-radius: 50px;
   display: inline-block;
-  margin: 3rem 0;
+  margin: 1.5rem 0 3rem 0;
   background-color: white;
   border: 2px solid white;
   transition: all 0.3s ease-in-out; }
@@ -824,7 +824,7 @@ body {
   padding: 16rem 0 15rem 0;
   clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
   margin-top: -24rem;
-  margin-bottom: 22rem; }
+  margin-bottom: 21rem; }
   @media only screen and (max-width: 62em) {
     .team {
       clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
