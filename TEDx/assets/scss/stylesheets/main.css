@@ -582,6 +582,13 @@ body {
       flex-direction: column;
       align-items: center;
     }*/ }
+    .countdown__paragraph .expiredAlert {
+      font-family: Diodrum_semibold;
+      text-transform: uppercase;
+      color: #ff2b06;
+      line-height: 1.5;
+      letter-spacing: 1px;
+      padding: 0 1rem; }
     .countdown__paragraph .days::before {
       content: "Days";
       font-size: 2.5rem;

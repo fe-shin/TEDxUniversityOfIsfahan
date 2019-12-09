@@ -236,6 +236,15 @@
       align-items: center;
     }*/
 
+    .expiredAlert {
+      font-family: Diodrum_semibold;
+      text-transform: uppercase;
+      color: $underline-red-color;
+      line-height: 1.5;
+      letter-spacing: 1px;
+      padding: 0 1rem;
+    }
+
     .days::before {
       content: "Days";
       font-size: 2.5rem;
