@@ -693,13 +693,24 @@ body {
   overflow: hidden; }
   .speakers__people_person_image_overlay .icons {
     position: absolute;
-    top: 100%;
+    width: 20rem;
+    height: 3rem;
+    top: 85%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    visibility: hidden;
-    transition: all .3s ease-in-out;
-    backface-visibility: hidden; }
+    transform: translateX(-50%);
+    background-color: #ff2b06;
+    padding: .5rem 0;
+    opacity: 1;
+    visibility: visible; }
+    @media only screen and (hover: hover) {
+      .speakers__people_person_image_overlay .icons {
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s ease-in-out;
+        backface-visibility: hidden; } }
     .speakers__people_person_image_overlay .icons > *:not(:last-child) {
       margin-right: 1rem; }
     .speakers__people_person_image_overlay .icons .socialIcon {
@@ -721,15 +732,16 @@ body {
   @media only screen and (max-width: 62em) {
     .speakers__people_person {
       margin: 2rem; } }
-  .speakers__people_person:hover .icons {
-    top: 86%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 1;
-    visibility: visible; }
-  .speakers__people_person:hover .speakers__people_person_image {
-    transform: scale(1.2);
-    filter: blur(1px) brightness(0.9); }
+  @media only screen and (hover: hover) {
+    .speakers__people_person:hover .icons {
+      top: 86%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 1;
+      visibility: visible; }
+    .speakers__people_person:hover .speakers__people_person_image {
+      transform: scale(1.2);
+      filter: grayscale(0); } }
 
 .speakers__people_person_image {
   height: 20rem;
@@ -737,6 +749,9 @@ body {
   transform: scale(1.5) translate(0, 2rem);
   transition: all .3s ease-in-out;
   backface-visibility: hidden; }
+  @media only screen and (hover: hover) {
+    .speakers__people_person_image {
+      filter: grayscale(100%) brightness(1.1); } }
 
 .speakers__people_person_name {
   margin-bottom: 1rem; }
@@ -746,7 +761,7 @@ body {
 
 .what {
   text-align: center;
-  padding: 25rem 10rem 30rem 10rem;
+  padding: 25rem 8rem 30rem 8rem;
   background-color: #FFFFFF;
   margin-top: -25rem; }
   @media only screen and (min-width: 120em) {
@@ -760,17 +775,20 @@ body {
 
 .what__explain {
   display: flex; }
+  @media only screen and (max-width: 37.5em) {
+    .what__explain {
+      flex-direction: column; } }
 
 .what__explain_ted_text,
 .what__explain_tedx_text {
-  margin-top: 5%; }
+  margin: 4rem 0 4rem 0; }
 
 .what__about {
-  margin-top: 10%; }
+  margin-top: 1rem; }
 
 .what__explain_ted,
 .what__explain_tedx {
-  padding: 0 5%; }
+  padding: 0 5rem; }
 
 .team {
   background-color: #F3F3F3;
@@ -801,13 +819,24 @@ body {
   overflow: hidden; }
   .team__members_member_image_overlay .icons {
     position: absolute;
-    top: 100%;
+    width: 20rem;
+    height: 3rem;
+    top: 85%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    visibility: hidden;
-    transition: all .3s ease-in-out;
-    backface-visibility: hidden; }
+    transform: translateX(-50%);
+    background-color: #ff2b06;
+    padding: .5rem 0;
+    opacity: 1;
+    visibility: visible; }
+    @media only screen and (hover: hover) {
+      .team__members_member_image_overlay .icons {
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s ease-in-out;
+        backface-visibility: hidden; } }
     .team__members_member_image_overlay .icons > *:not(:last-child) {
       margin-right: 1rem; }
     .team__members_member_image_overlay .icons .socialIcon {
@@ -827,15 +856,16 @@ body {
   @media only screen and (max-width: 62em) {
     .team__members_member {
       margin: 2rem; } }
-  .team__members_member:hover .icons {
-    top: 86%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 1;
-    visibility: visible; }
-  .team__members_member:hover .team__members_member_image {
-    transform: scale(1.2);
-    filter: blur(1px) brightness(0.9); }
+  @media only screen and (hover: hover) {
+    .team__members_member:hover .icons {
+      top: 86%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 1;
+      visibility: visible; }
+    .team__members_member:hover .team__members_member_image {
+      transform: scale(1.2);
+      filter: grayscale(0); } }
 
 .team__members_member_image {
   height: 20rem;
@@ -843,3 +873,6 @@ body {
   transform: scale(1.5) translate(0, 2rem);
   transition: all .3s ease-in-out;
   backface-visibility: hidden; }
+  @media only screen and (hover: hover) {
+    .team__members_member_image {
+      filter: grayscale(100%) brightness(1.1); } }
