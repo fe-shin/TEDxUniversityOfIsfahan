@@ -236,6 +236,15 @@
       align-items: center;
     }*/
 
+    .expiredAlert {
+      font-family: Diodrum_semibold;
+      text-transform: uppercase;
+      color: $underline-red-color;
+      line-height: 1.5;
+      letter-spacing: 1px;
+      padding: 0 1rem;
+    }
+
     .days::before {
       content: "Days";
       font-size: 2.5rem;
@@ -511,7 +520,7 @@
   padding: 16rem 0 15rem 0;
   clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
   margin-top: -24rem;
-  margin-bottom: 22rem; 
+  margin-bottom: 21rem; 
 
   @media only screen and (max-width: 62em) {
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);

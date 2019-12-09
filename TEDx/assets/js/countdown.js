@@ -29,6 +29,13 @@ var x = setInterval(function() {
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("expired").innerHTML = "EXPIRED!";
+    document.getElementById("days").style.display = "none";
+
+    document.getElementById("hours").style.display = "none";
+
+    document.getElementById("minutes").style.display = "none";
+
+    document.getElementById("seconds").style.display = "none";
+    document.getElementById("expired").innerHTML = "See you next year!";
   }
 }, 1000);

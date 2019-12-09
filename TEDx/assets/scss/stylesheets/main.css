@@ -222,12 +222,33 @@ body {
   height: 100vh;
   position: relative;
   width: 100%; }
+  .header__logo {
+    width: 85%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    @media only screen and (min-width: 56.25em) {
+      .header__logo {
+        width: 60%; } }
+  .header__details {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    font-family: SF, sans-serif;
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    transform: translate(-50%, -100%); }
 
 .footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 23rem;
+  height: 22rem;
   padding: 2rem 0;
   background-color: black;
   text-align: center;
@@ -254,7 +275,7 @@ body {
   padding: 1rem 3rem;
   border-radius: 50px;
   display: inline-block;
-  margin: 3rem 0;
+  margin: 1.5rem 0 3rem 0;
   background-color: white;
   border: 2px solid white;
   transition: all 0.3s ease-in-out; }
@@ -582,6 +603,13 @@ body {
       flex-direction: column;
       align-items: center;
     }*/ }
+    .countdown__paragraph .expiredAlert {
+      font-family: Diodrum_semibold;
+      text-transform: uppercase;
+      color: #ff2b06;
+      line-height: 1.5;
+      letter-spacing: 1px;
+      padding: 0 1rem; }
     .countdown__paragraph .days::before {
       content: "Days";
       font-size: 2.5rem;
@@ -796,7 +824,7 @@ body {
   padding: 16rem 0 15rem 0;
   clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
   margin-top: -24rem;
-  margin-bottom: 22rem; }
+  margin-bottom: 21rem; }
   @media only screen and (max-width: 62em) {
     .team {
       clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
