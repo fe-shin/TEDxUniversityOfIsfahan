@@ -36,6 +36,6 @@ var x = setInterval(function() {
     document.getElementById("minutes").style.display = "none";
 
     document.getElementById("seconds").style.display = "none";
-    document.getElementById("expired").innerHTML = "See you next year!";
+    document.getElementById("expired").innerHTML = "سال بعد میبینمتون!";
   }
 }, 1000);

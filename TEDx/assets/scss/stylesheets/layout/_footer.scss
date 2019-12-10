@@ -36,8 +36,8 @@
 }
 
 .footer__link {
-  font-family: SF_bold;
-  padding: 1rem 3rem;
+  font-family: Diodrum_semibold;
+  padding: 1.1rem 3rem 1.5rem 3rem;
   border-radius: 50px;
   display: inline-block;
   margin: 1.5rem 0 3rem 0;
@@ -45,7 +45,6 @@
   border: 2px solid $base-color;
   transition: all 0.3s ease-in-out;
   &:hover {
-    font-family: SF_bold;
     border: 2px solid $base-color;
     background: transparent;
   }

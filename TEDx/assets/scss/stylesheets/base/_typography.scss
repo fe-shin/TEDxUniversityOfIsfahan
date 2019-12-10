@@ -52,7 +52,8 @@
 }
 
 .what__explain_ted_text,
-.what__explain_tedx_text {
+.what__explain_tedx_text,
+.what__about_text {
   @include typographyStyle($sf-regular, 1.6rem, 400, $black-color, 1.5);
 }
 
