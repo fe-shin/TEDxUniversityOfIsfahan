@@ -10,6 +10,21 @@
     visibility: hidden;
     transition: all .2s ease-in-out;
 
+    &__info {
+        width: 85%;
+        padding: 1rem;
+        margin: 1.5rem auto;
+        background-color: #ffffe0;
+        border-right: 5px solid #e6db55;
+        color: #c0b000;
+
+        p {
+            font-family: Sahel, sans-serif;
+            font-size: 1.3rem;
+            text-align: justify;
+        }
+    }
+
     &__closebtn {
         position: sticky;
         top: 0;

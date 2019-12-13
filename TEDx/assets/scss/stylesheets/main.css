@@ -24,7 +24,7 @@ html {
       font-size: 43.75%; } }
 
 body {
-  transition: all .2s; }
+  font-family: Sahel, sans-serif; }
 
 .navbar__container {
   width: 90%;
@@ -61,82 +61,72 @@ body {
   src: url("../../fonts/sf-ui-display-bold.woff"); }
 
 @font-face {
-  font-family: Diodrum_extralight;
-  src: url("../../fonts//Diodrum/DiodrumArabic-Extralight.ttf"); }
+  font-family: Sahel;
+  src: url("../../fonts/Sahel/Sahel.woff");
+  src: url("../../fonts/Sahel/Sahel.woff") format("woff"), url("../../fonts/Sahel/Sahel.woff2") format("woff2"), url("../../fonts/Sahel/Sahel.eot") format("embedded-opentype"), url("../../fonts/Sahel/Sahel.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 
 @font-face {
-  font-family: Diodrum_light;
-  src: url("../../fonts/Diodrum/DiodrumArabic-Light.ttf"); }
-
-@font-face {
-  font-family: Diodrum_regular;
-  src: url("../../fonts/Diodrum/DiodrumArabic-Regular.ttf"); }
-
-@font-face {
-  font-family: Diodrum_medium;
-  src: url("../../fonts/Diodrum/DiodrumArabic-Medium.ttf"); }
-
-@font-face {
-  font-family: Diodrum_bold;
-  src: url("../../fonts/Diodrum/DiodrumArabic-Bold.ttf"); }
-
-@font-face {
-  font-family: Diodrum_semibold;
-  src: url("../../fonts/Diodrum/DiodrumArabic-Semibold.ttf"); }
+  font-family: Sahel_bold;
+  src: url("../../fonts/Sahel/Sahel-Bold.woff");
+  src: url("../../fonts/Sahel/Sahel-Bold.woff") format("woff"), url("../../fonts/Sahel/Sahel-Bold.woff2") format("woff2"), url("../../fonts/Sahel/Sahel-Bold.eot") format("embedded-opentype"), url("../../fonts/Sahel/Sahel-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
 
 /**
  * Basic typography style for copy text
  */
 .navbar__menu_list_item_link {
-  font-family: Diodrum_extralight;
+  font-family: Sahel;
   font-size: 2rem;
   font-weight: 400;
   line-height: 1.2;
   color: white; }
 
 .stickyNavbar__menu_list_item_link {
-  font-family: Diodrum_medium;
+  font-family: Sahel;
   font-size: 2rem;
   font-weight: 400;
   line-height: 1.2;
   color: black; }
   .stickyNavbar__menu_list_item_link:hover {
-    font-family: Diodrum_medium;
+    font-family: Sahel;
     font-size: 2rem;
     font-weight: 400;
     line-height: 1.2;
     color: red; }
 
 .description__title {
-  font-family: Diodrum_medium;
+  font-family: Sahel;
   font-size: 4.5rem;
   font-weight: 400;
   line-height: 1.8;
   color: black; }
 
 .countdown__title {
-  font-family: Diodrum_medium;
+  font-family: Sahel;
   font-size: 4rem;
   font-weight: 400;
   line-height: 1.8;
   color: black; }
 
 .speakers__title {
-  font-family: Diodrum_medium;
+  font-family: Sahel;
   font-size: 4rem;
   font-weight: 400;
   line-height: 1.8;
   color: black; }
 
 .speakers__people_person_name {
-  font-family: Diodrum_bold;
+  font-family: Sahel_bold;
   font-size: 2rem;
   font-weight: 400;
   line-height: 1.2;
   color: black; }
 
 .speakers__people_person_topic {
-  font-family: Diodrum_medium;
+  font-family: Sahel;
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.5;
@@ -145,7 +135,7 @@ body {
 .what__explain_ted_title,
 .what__explain_tedx_title,
 .what__about_title {
-  font-family: Diodrum_medium;
+  font-family: Sahel;
   font-size: 3.25rem;
   font-weight: 400;
   line-height: 1.5;
@@ -154,49 +144,49 @@ body {
 .what__explain_ted_text,
 .what__explain_tedx_text,
 .what__about_text {
-  font-family: Diodrum_medium;
+  font-family: Sahel;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.5;
   color: black; }
 
 .team__title {
-  font-family: Diodrum_medium;
+  font-family: Sahel;
   font-size: 4rem;
   font-weight: 400;
   line-height: 1.8;
   color: black; }
 
 .team__members_member_name {
-  font-family: Diodrum_medium;
+  font-family: Sahel;
   font-size: 2rem;
   font-weight: bold;
   line-height: 1.5;
   color: black; }
 
 .team__members_member_position {
-  font-family: Diodrum_medium;
+  font-family: Sahel;
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.5;
   color: #616161; }
 
 .footer__copyright {
-  font-family: Diodrum_medium;
+  font-family: Sahel;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.2;
   color: #BCBCBC; }
 
 .footer__link {
-  font-family: Diodrum_medium;
+  font-family: Sahel;
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.2;
   color: black;
   text-decoration: none; }
   .footer__link:hover {
-    font-family: Diodrum_medium;
+    font-family: Sahel;
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 1.2;
@@ -240,7 +230,7 @@ body {
     padding: 1rem 0;
     font-size: 1.8rem;
     line-height: 1.6;
-    font-family: SF, sans-serif;
+    font-family: Sahel, sans-serif;
     color: white;
     text-align: center;
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
@@ -273,11 +263,11 @@ body {
     color: white; }
 
 .footer__link {
-  font-family: Diodrum_semibold;
-  padding: 1.1rem 3rem 1.5rem 3rem;
+  font-family: Sahel, sans-serif;
+  padding: 1.5rem 3rem 1.5rem 3rem;
   border-radius: 50px;
   display: inline-block;
-  margin: 1.5rem 0 3rem 0;
+  margin: 1rem 0 2rem 0;
   background-color: white;
   border: 2px solid white;
   transition: all 0.3s ease-in-out; }
@@ -289,11 +279,11 @@ body {
   border: 0;
   background-color: #ff2b06;
   color: #fff;
-  font-family: Diodrum_bold;
+  font-family: Sahel_bold;
   font-size: 1.2rem;
   text-decoration: none;
   text-transform: uppercase;
-  padding: .2rem 0 1rem 0;
+  padding: 1rem 0 1rem 0;
   margin-left: 3rem;
   border-radius: 5rem;
   cursor: pointer;
@@ -331,7 +321,7 @@ body {
         height: 5rem; }
   .form__input {
     font-size: 1.6rem;
-    font-family: SF, sans-serif;
+    font-family: Sahel, sans-serif;
     color: #575757;
     padding: 1.5rem 2rem;
     border-radius: 2px;
@@ -340,10 +330,11 @@ body {
     border: none;
     border-bottom: 3px solid #575757;
     display: block;
-    transition: all .3s; }
+    transition: all .3s;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
     .form__input:focus {
       outline: none;
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
       border-bottom: 3px solid #ff2b06; }
     .form__input:focus:invalid {
       border-bottom: 3px solid #ff2b06; }
@@ -351,20 +342,20 @@ body {
       font-weight: bold;
       color: rgba(0, 0, 0, 0.7); }
   .form__label {
-    font-family: SF, sans-serif;
+    font-family: Sahel, sans-serif;
     font-size: 1.2rem;
     font-weight: 700;
-    margin-left: 5rem;
+    margin-right: 5rem;
     margin-top: .7rem;
     margin-bottom: .7rem;
     display: block;
     transition: all .3s;
     align-self: flex-start; }
     .form__label--2 {
-      font-family: SF, sans-serif;
+      font-family: Sahel, sans-serif;
       font-size: 1.6rem;
       font-weight: 700;
-      margin-left: 5rem;
+      margin-right: 5rem;
       margin-top: .7rem;
       margin-bottom: .7rem;
       display: block;
@@ -375,10 +366,20 @@ body {
     visibility: hidden;
     transform: translateY(-1rem); }
   .form__textarea {
+    font-family: Sahel, sans-serif;
+    font-size: 1.3rem;
     resize: none;
     width: 90%;
-    height: 5rem;
-    color: rgba(0, 0, 0, 0.3); }
+    height: 7rem;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    border: 0;
+    border-right: 3px solid #575757;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    .form__textarea:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+      border-right: 3px solid #ff2b06; }
 
 .registerPopUp {
   position: fixed;
@@ -391,6 +392,17 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: all .2s ease-in-out; }
+  .registerPopUp__info {
+    width: 85%;
+    padding: 1rem;
+    margin: 1.5rem auto;
+    background-color: #ffffe0;
+    border-right: 5px solid #e6db55;
+    color: #c0b000; }
+    .registerPopUp__info p {
+      font-family: Sahel, sans-serif;
+      font-size: 1.3rem;
+      text-align: justify; }
   .registerPopUp__closebtn {
     position: sticky;
     top: 0;
@@ -433,7 +445,7 @@ body {
   overflow-x: hidden;
   transition: all .1s ease-out;
   font-size: 1.8rem;
-  font-family: Diodrum_semibold; }
+  font-family: Sahel_bold, sans-serif; }
   .openingMenu__close {
     margin-top: -4rem;
     font-size: 4rem;
@@ -494,7 +506,7 @@ body {
   align-items: center; }
 
 .navbar__lang {
-  font-family: Diodrum_bold;
+  font-family: Sahel_bold, sans-serif;
   font-size: 1.5rem;
   text-decoration: none;
   color: #ff2b06;
@@ -536,15 +548,15 @@ body {
   z-index: 999; }
 
 .stickyNavbar__brand {
-  flex: 0 0 30%; }
+  margin-left: 2rem; }
 
 .stickyNavbar__menu {
-  flex: 0 0 50%; }
+  margin-left: auto; }
 
 .stickyNavbar__buttons {
-  flex: 0 0 20%;
   display: flex;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  align-items: center; }
 
 .stickyNavbar__menu_list {
   display: flex;
@@ -570,7 +582,7 @@ body {
       padding: 8rem 5rem 10rem 5rem; } }
   .description__paragraph {
     margin-top: 5rem;
-    font-family: Diodrum_medium, sans-serif;
+    font-family: Sahel, sans-serif;
     font-size: 1.8rem;
     text-align: center; }
     .description__paragraph p {
@@ -590,7 +602,7 @@ body {
   .countdown__paragraph {
     margin-top: 5rem;
     font-size: 4rem;
-    font-family: Diodrum_extralight, sans-serif;
+    font-family: Sahel, sans-serif;
     display: flex;
     justify-content: center;
     /*@media only screen and (max-width: 53.125em) {
@@ -598,7 +610,7 @@ body {
       align-items: center;
     }*/ }
     .countdown__paragraph .expiredAlert {
-      font-family: Diodrum_semibold;
+      font-family: Sahel_bold, sans-serif;
       text-transform: uppercase;
       color: #ff2b06;
       line-height: 1.5;
@@ -607,7 +619,7 @@ body {
     .countdown__paragraph .days::before {
       content: "روز";
       font-size: 2.5rem;
-      font-family: Diodrum_medium, sans-serif;
+      font-family: Sahel, sans-serif;
       color: #555555;
       position: absolute;
       top: 110%; }
@@ -620,7 +632,7 @@ body {
     .countdown__paragraph .hours::before {
       content: "ساعت";
       font-size: 2.5rem;
-      font-family: Diodrum_medium, sans-serif;
+      font-family: Sahel, sans-serif;
       color: #555555;
       position: absolute;
       top: 110%; }
@@ -633,7 +645,7 @@ body {
     .countdown__paragraph .minutes::before {
       content: "دقیقه";
       font-size: 2.5rem;
-      font-family: Diodrum_medium, sans-serif;
+      font-family: Sahel, sans-serif;
       color: #555555;
       position: absolute;
       top: 110%; }
@@ -646,7 +658,7 @@ body {
     .countdown__paragraph .seconds::before {
       content: "ثانیه";
       font-size: 2.5rem;
-      font-family: Diodrum_medium, sans-serif;
+      font-family: Sahel, sans-serif;
       color: #555555;
       position: absolute;
       top: 110%; }
@@ -660,7 +672,7 @@ body {
     width: 15rem;
     height: 15rem;
     background-color: white;
-    font-family: SF, sans-serif;
+    font-family: Sahel, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -721,7 +733,6 @@ body {
     left: 50%;
     transform: translateX(-50%);
     background-color: #ff2b06;
-    padding: .5rem 0;
     opacity: 1;
     visibility: visible; }
     @media only screen and (hover: hover) {
@@ -736,9 +747,11 @@ body {
     .speakers__people_person_image_overlay .icons > *:not(:last-child) {
       margin-left: 1rem; }
     .speakers__people_person_image_overlay .icons .socialIcon {
-      color: white; }
+      color: white;
+      line-height: 3.25rem; }
       .speakers__people_person_image_overlay .icons .socialIcon:link, .speakers__people_person_image_overlay .icons .socialIcon:visited {
-        color: white; }
+        color: white;
+        line-height: 3.25rem; }
 
 .speakers__people {
   display: flex;
@@ -851,7 +864,6 @@ body {
     left: 50%;
     transform: translateX(-50%);
     background-color: #ff2b06;
-    padding: .5rem 0;
     opacity: 1;
     visibility: visible; }
     @media only screen and (hover: hover) {
@@ -866,9 +878,11 @@ body {
     .team__members_member_image_overlay .icons > *:not(:last-child) {
       margin-left: 1rem; }
     .team__members_member_image_overlay .icons .socialIcon {
-      color: white; }
+      color: white;
+      line-height: 3.25rem; }
       .team__members_member_image_overlay .icons .socialIcon:link, .team__members_member_image_overlay .icons .socialIcon:visited {
-        color: white; }
+        color: white;
+        line-height: 3.25rem; }
 
 .team__members {
   display: flex;

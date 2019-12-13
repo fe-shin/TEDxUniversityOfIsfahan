@@ -40,7 +40,7 @@
     
     &__input {
         font-size: 1.6rem;
-        font-family: SF, sans-serif;
+        font-family: Sahel, sans-serif;
         color: rgb(87, 87, 87);
         padding: 1.5rem 2rem;
         border-radius: 2px;
@@ -50,10 +50,11 @@
         border-bottom: 3px solid rgb(87, 87, 87);
         display: block;
         transition: all .3s;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
 
         &:focus {
             outline: none;
-            box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
             border-bottom: 3px solid $underline-red-color;
         }
 
@@ -69,10 +70,10 @@
 
 
     &__label {
-        font-family: SF, sans-serif;
+        font-family: Sahel, sans-serif;
         font-size: 1.2rem;
         font-weight: 700;
-        margin-left: 5rem;
+        margin-right: 5rem;
         margin-top: .7rem;
         margin-bottom: .7rem;
         display: block;
@@ -80,10 +81,10 @@
         align-self: flex-start;
 
         &--2 {
-            font-family: SF, sans-serif;
+            font-family: Sahel, sans-serif;
             font-size: 1.6rem;
             font-weight: 700;
-            margin-left: 5rem;
+            margin-right: 5rem;
             margin-top: .7rem;
             margin-bottom: .7rem;
             display: block;
@@ -99,10 +100,22 @@
     }
 
     &__textarea {
+        font-family: Sahel, sans-serif;
+        font-size: 1.3rem;
         resize: none;
         width: 90%;
-        height: 5rem;
-        color: rgba(0, 0, 0, .3);
+        height: 7rem;
+        color: rgba(0, 0, 0, .6);
+        padding: 1rem;
+        border: 0;
+        border-right: 3px solid rgb(87, 87, 87);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
+            border-right: 3px solid $underline-red-color;
+        }
     }
 
 }

@@ -12,7 +12,7 @@
   overflow-x: hidden;
   transition: all .1s ease-out;
   font-size: 1.8rem;
-  font-family: Diodrum_semibold;
+  font-family: Sahel_bold, sans-serif;
 
   &__close {
     margin-top: -4rem;
@@ -98,7 +98,7 @@
 
 
 .navbar__lang {
-  font-family: Diodrum_bold;
+  font-family: Sahel_bold, sans-serif;
   font-size: 1.5rem;
   text-decoration: none;
   color: $underline-red-color;
@@ -148,17 +148,17 @@
 }
 
 .stickyNavbar__brand {
-  flex: 0 0 30%;
+  margin-left: 2rem;
 }
 
 .stickyNavbar__menu {
-  flex: 0 0 50%;
+  margin-left: auto;
 }
 
 .stickyNavbar__buttons {
-  flex: 0 0 20%;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .stickyNavbar__menu_list {
@@ -191,7 +191,7 @@
 
   &__paragraph {
     margin-top: 5rem;
-    font-family: Diodrum_medium, sans-serif;
+    font-family: Sahel, sans-serif;
     font-size: 1.8rem;
     text-align: center;
 
@@ -220,7 +220,7 @@
   &__paragraph {
     margin-top: 5rem;
     font-size: 4rem;
-    font-family: Diodrum_extralight, sans-serif;
+    font-family: Sahel, sans-serif;
     display: flex;
     justify-content: center;
 
@@ -230,7 +230,7 @@
     }*/
 
     .expiredAlert {
-      font-family: Diodrum_semibold;
+      font-family: Sahel_bold, sans-serif;
       text-transform: uppercase;
       color: $underline-red-color;
       line-height: 1.5;
@@ -241,7 +241,7 @@
     .days::before {
       content: "روز";
       font-size: 2.5rem;
-      font-family: Diodrum_medium, sans-serif;
+      font-family: Sahel, sans-serif;
       color: rgb(85, 85, 85);
       position: absolute;
       top: 110%;
@@ -258,7 +258,7 @@
     .hours::before {
       content: "ساعت";
       font-size: 2.5rem;
-      font-family: Diodrum_medium, sans-serif;
+      font-family: Sahel, sans-serif;
       color: rgb(85, 85, 85);
       position: absolute;
       top: 110%;
@@ -275,7 +275,7 @@
     .minutes::before {
       content: "دقیقه";
       font-size: 2.5rem;
-      font-family: Diodrum_medium, sans-serif;
+      font-family: Sahel, sans-serif;
       color: rgb(85, 85, 85);
       position: absolute;
       top: 110%;
@@ -292,7 +292,7 @@
     .seconds::before {
       content: "ثانیه";
       font-size: 2.5rem;
-      font-family: Diodrum_medium, sans-serif;
+      font-family: Sahel, sans-serif;
       color: rgb(85, 85, 85);
       position: absolute;
       top: 110%;
@@ -311,7 +311,7 @@
     width: 15rem;
     height: 15rem;
     background-color: white;
-    font-family: SF, sans-serif;
+    font-family: Sahel, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -384,7 +384,6 @@
     left: 50%;
     transform: translateX(-50%);
     background-color: $underline-red-color;
-    padding: .5rem 0;
     opacity: 1;
     visibility: visible;
     
@@ -403,9 +402,11 @@
 
      .socialIcon {
        color: white;
+       line-height: 3.25rem;
 
        &:link, &:visited {
         color: white;
+        line-height: 3.25rem;
        }
      }
    }
@@ -551,7 +552,6 @@
    left: 50%;
    transform: translateX(-50%);
    background-color: $underline-red-color;
-   padding: .5rem 0;
    opacity: 1;
    visibility: visible;
    
@@ -571,9 +571,11 @@
 
    .socialIcon {
      color: white;
+     line-height: 3.25rem;
 
      &:link, &:visited {
       color: white;
+      line-height: 3.25rem;
      }
    }
  }
