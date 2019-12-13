@@ -64,10 +64,13 @@
 
 .team__members_member_name {
   @include typographyStyle($sf-regular, 2rem, bold, $black-color, 1.5);
+  list-style: none;
+  display: flex;
 }
 
 .team__members_member_position {
   @include typographyStyle($sf-regular, 1.5rem, 400, $speakers-topic-color, 1.5);
+  list-style: none;
 }
 
 //footer

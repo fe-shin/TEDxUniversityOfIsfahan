@@ -427,6 +427,10 @@
 .speakers__people_person {
   margin: 5rem;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   @media only screen and (max-width: 62em) {
     margin: 2rem;
@@ -461,10 +465,15 @@
 
 .speakers__people_person_name {
   margin-bottom: 1rem;
+  list-style: none;
+  display: flex;
 }
+
+
 
 .speakers__people_person_topic {
   padding: 0 2rem;
+  list-style: none;
 }
 
 //what
@@ -592,6 +601,10 @@
 .team__members_member {
   margin: 5rem;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   @media only screen and (max-width: 62em) {
     margin: 2rem;
