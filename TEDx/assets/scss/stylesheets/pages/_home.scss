@@ -431,6 +431,10 @@
 }
 
 .speakers__people_person {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 5rem;
   position: relative;
 
@@ -466,11 +470,14 @@
 }
 
 .speakers__people_person_name {
+  display: flex;
   margin-bottom: 1rem;
+  list-style: none;
 }
 
 .speakers__people_person_topic {
   padding: 0 2rem;
+  list-style: none;
 }
 
 //what
@@ -498,6 +505,7 @@
     flex-direction: column;
   }
 }
+
 
 .what__explain_ted_text,
 .what__explain_tedx_text,
@@ -590,8 +598,18 @@
 }
 
 .team__members_member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 5rem;
   position: relative;
+
+
+  &_name,
+  &_position {
+    list-style-type: none;
+  }
 
   @media only screen and (max-width: 62em) {
     margin: 2rem;

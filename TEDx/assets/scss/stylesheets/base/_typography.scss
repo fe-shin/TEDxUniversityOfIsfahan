@@ -64,6 +64,7 @@
 
 .team__members_member_name {
   @include typographyStyle($sf-regular, 2rem, bold, $black-color, 1.5);
+  display: flex;
 }
 
 .team__members_member_position {
