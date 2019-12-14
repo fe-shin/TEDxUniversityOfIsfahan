@@ -406,6 +406,28 @@ body {
       font-family: Sahel, sans-serif;
       font-size: 1.3rem;
       text-align: justify; }
+  .registerPopUp__true {
+    width: 85%;
+    padding: 1rem;
+    margin: 1rem auto;
+    background-color: #D2FFCF;
+    border-right: 5px solid #47AF41;
+    color: #47AF41; }
+    .registerPopUp__true p {
+      font-family: Sahel, sans-serif;
+      font-size: 1.3rem;
+      text-align: justify; }
+  .registerPopUp__err {
+    width: 85%;
+    padding: 1rem;
+    margin: 1rem auto;
+    background-color: #ffe2d9;
+    border-right: 5px solid #fe8f6b;
+    color: #ff4040; }
+    .registerPopUp__err p {
+      font-family: Sahel, sans-serif;
+      font-size: 1.3rem;
+      text-align: justify; }
   .registerPopUp__closebtn {
     position: sticky;
     top: 0;
