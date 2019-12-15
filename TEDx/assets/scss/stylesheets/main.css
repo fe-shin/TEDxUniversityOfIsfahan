@@ -460,6 +460,10 @@ body {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.2);
     transition: all .3s .2s; }
+    @media only screen and (max-width: 62.5em) {
+      .registerPopUp__content {
+        width: 90%;
+        height: 85vh; } }
     .registerPopUp__content .container {
       text-align: center;
       margin: -2rem auto 2rem auto; }
