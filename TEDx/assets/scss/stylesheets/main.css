@@ -770,6 +770,9 @@ body {
   margin-bottom: 2rem;
   overflow: hidden; }
   .speakers__people_person_image_overlay .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     width: 20rem;
     height: 3rem;
@@ -792,7 +795,10 @@ body {
     .speakers__people_person_image_overlay .icons > *:not(:last-child) {
       margin-right: 1rem; }
     .speakers__people_person_image_overlay .icons .socialIcon {
-      color: white; }
+      color: white;
+      height: 2rem; }
+      .speakers__people_person_image_overlay .icons .socialIcon img {
+        height: 2rem; }
       .speakers__people_person_image_overlay .icons .socialIcon:link, .speakers__people_person_image_overlay .icons .socialIcon:visited {
         color: white; }
 
@@ -904,6 +910,9 @@ body {
   margin-bottom: 2rem;
   overflow: hidden; }
   .team__members_member_image_overlay .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     width: 20rem;
     height: 3rem;
@@ -926,7 +935,10 @@ body {
     .team__members_member_image_overlay .icons > *:not(:last-child) {
       margin-right: 1rem; }
     .team__members_member_image_overlay .icons .socialIcon {
-      color: white; }
+      color: white;
+      height: 2rem; }
+      .team__members_member_image_overlay .icons .socialIcon img {
+        height: 2rem; }
       .team__members_member_image_overlay .icons .socialIcon:link, .team__members_member_image_overlay .icons .socialIcon:visited {
         color: white; }
 

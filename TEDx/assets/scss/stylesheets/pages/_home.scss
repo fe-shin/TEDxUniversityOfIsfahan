@@ -384,6 +384,9 @@
     overflow: hidden;
 
    .icons {
+     display: flex;
+     justify-content: center;
+     align-items: center;
     position: absolute;
     width: 20rem;
     height: 3rem;
@@ -410,6 +413,11 @@
 
      .socialIcon {
        color: white;
+       height: 2rem;
+
+        img {
+          height: 2rem;
+        }
 
        &:link, &:visited {
         color: white;
@@ -554,6 +562,9 @@
   overflow: hidden;
 
  .icons {
+   display: flex;
+   justify-content: center;
+   align-items: center;
    position: absolute;
    width: 20rem;
    height: 3rem;
@@ -581,6 +592,11 @@
 
    .socialIcon {
      color: white;
+     height: 2rem;
+
+     img {
+       height: 2rem;
+     }
 
      &:link, &:visited {
       color: white;
