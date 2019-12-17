@@ -23,3 +23,60 @@
         letter-spacing: 1.5px;
     }
 }
+
+.registerBigButton,
+.registerBigButton:link,
+.registerBigButton:visited {
+    font-family: Diodrum_bold, sans-serif;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: white;
+    background-color: #ff2b06;
+    border-radius: 5rem;
+    padding: 1rem 5rem 2rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    position: relative;
+    transition: all .2s ease-in-out;
+
+    @media only screen and (max-width: 50em) {
+        font-size: 1.5rem;
+    }
+
+    @media only screen and (hover: hover) {
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+
+            &::after {
+                transform: scaleX(1.4) scaleY(1.6);
+                opacity: 0;
+            }
+        }
+
+        &::after {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            border-radius: 5rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: all .4s;
+            background-color: #ff2b06;
+            
+        }
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    }
+
+    
+}
