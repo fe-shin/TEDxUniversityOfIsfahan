@@ -208,6 +208,11 @@
   }
 }
 
+.description__sponsors {
+  margin-bottom: 21rem;
+  padding: 12rem 5rem 10rem 5rem;
+}
+
 //countdown
 .countdown {
   padding: 14rem 15rem 32rem 15rem;
@@ -656,5 +661,65 @@
 
   @media only screen and (hover: hover) {
     filter: grayscale(100%) brightness(1.1);
+  }
+}
+
+// sponsors page
+
+.break {
+  display: inline-block;
+  margin: 4rem auto 2rem;
+  background-color: $underline-red-color;
+  height: 2px;
+  width: 85%;
+
+  &--2 {
+    display: inline-block;
+    margin: 2rem auto 5rem;
+    background-color: $underline-red-color;
+    height: 1px;
+    width: 65%;
+  }
+}
+
+.sponsors_title {
+  font-size: 2.5rem;
+}
+
+.sponsors_gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    & > *:not(:last-child) {
+      margin-right: 8rem;
+    }
+
+    @media only screen and (max-width: 50em) {
+      flex-direction: column;
+
+      & > *:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 5rem;
+      }
+    }
+}
+
+.sponsors__picture {
+  height: 11rem;
+  width: auto;
+  transition: all .2s ease-in-out;
+
+  @media only screen and (max-width: 50em) {
+      height:15rem;
+  }
+
+  @media only screen and (hover: hover) {
+    filter: grayscale(100%);
+
+    &:hover {
+      filter: grayscale(0);
+    }
   }
 }
