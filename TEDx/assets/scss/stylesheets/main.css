@@ -512,7 +512,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
-    height: 50rem;
+    height: 20rem;
     padding: 4rem;
     background-color: #fff;
     overflow-y: auto;
@@ -696,7 +696,7 @@ body {
 
 .description__sponsors {
   margin-bottom: 21rem;
-  padding: 12rem 5rem 10rem 5rem; }
+  padding: 6rem 5rem 10rem 5rem; }
 
 .countdown {
   padding: 14rem 15rem 32rem 15rem;
