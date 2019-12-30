@@ -155,6 +155,9 @@
 }
 
 .stickyNavbar__brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex: 0 0 30%;
 }
 
@@ -723,3 +726,4 @@
     }
   }
 }
+
