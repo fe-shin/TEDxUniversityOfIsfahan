@@ -72,7 +72,7 @@
                 <div class="header__container">
                         <img class="header__logo" src="assets/img/Logo.png" />
                         <a href="#registerPopUp" class="registerBigButton">
-                            Register now!
+                            Nominate a speaker!
                         </a>
                 </div>
                     <div class="header__details">
@@ -102,7 +102,7 @@
 
                     <div class="stickyNavbar__buttons">
                         <a href="#registerPopUp" class="navbar__register">
-                            Register
+                            Nominate a speaker
                         </a>
                         <a href="#" class="navbar__lang">
                             FA
@@ -602,9 +602,62 @@
                     <a class="registerPopUp__closebtn" href="#"><i class="fa fa-remove"></i></a>
 
                     <div class="container">
-                        <h2 class="description__title">SEE YOU NEXT YEAR!</h2>
+                        <h2 class="description__title">Speaker Nomination Form</h2>
                         <span class="underline_red"></span>
                         <span class="underline_black"></span>
+    
+                        <form action="#" class="form" method="post">
+    
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                                <label for="name" class="form__label">Full Name</label>
+                            </div>
+    
+                            <div class="form__group">
+                                <input type="email" class="form__input" placeholder="Email Address" id="email" required>
+                                <label for="email" class="form__label">Email Address</label>
+                            </div>
+    
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Phone Number" id="phone" required>
+                                <label for="phone" class="form__label">Phone Number</label>
+                            </div>
+    
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Full Name of The Nominated Speaker" id="nameSpeaker" required>
+                                <label for="career" class="form__label">Full Name of The Nominated Speaker</label>
+                            </div>
+    
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Email Address or Phone Number of The Nominated Speaker" id="phoneEmailSpeaker" required>
+                                <label for="degree" class="form__label">Email Address or Phone Number of The Nominated Speaker</label>
+                            </div>
+    
+                            <div class="form__group">
+                                <label class="form__label--2" for="msg1">What is the idea of the nominated speaker?
+                                </label>
+                                <textarea onfocus="this.value = ''" class="form__textarea" id="msg1" required>What is the idea of the nominated speaker?
+                                </textarea>
+                            </div>
+    
+                            <div class="form__group--button">
+                                <button class="navbar__register">Register</button>
+                            </div>
+    
+                            <div class="registerPopUp__true">
+                                <p>
+                                    You have successfully registered!
+                                </p>
+                            </div>
+    
+                            <div class="registerPopUp__err">
+                                <p>
+                                    A problem occured while registering your request!
+                                </p>
+                            </div>
+    
+                        </form>
+
                     </div>
 
                 </div>

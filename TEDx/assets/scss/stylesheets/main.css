@@ -398,7 +398,7 @@ body {
   -webkit-transition: all .1s;
   transition: all .1s;
   display: inline-block;
-  width: 12rem;
+  width: 18rem;
   text-align: center;
 }
 
@@ -707,7 +707,7 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 50%;
-  height: 20rem;
+  height: 50rem;
   padding: 4rem;
   background-color: #fff;
   overflow-y: auto;
