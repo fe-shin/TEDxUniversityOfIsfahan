@@ -1,4 +1,6 @@
 .form {
+    direction: rtl;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,7 +41,7 @@
 
     &__input {
         font-size: 1.6rem;
-        font-family: SF, sans-serif;
+        font-family: Vazir, sans-serif;
         color: rgb(87, 87, 87);
         padding: 1.5rem 2rem;
         border-radius: 2px;
@@ -65,7 +67,7 @@
 
 
     &__label {
-        font-family: SF, sans-serif;
+        font-family: Vazir, sans-serif;
         font-size: 1.2rem;
         font-weight: 700;
         margin-left: 5rem;
@@ -76,7 +78,7 @@
         align-self: flex-start;
 
         &--2 {
-            font-family: SF, sans-serif;
+            font-family: Vazir, sans-serif;
             font-size: 1.6rem;
             font-weight: 700;
             margin-left: 5rem;
@@ -96,11 +98,11 @@
     }
 
     &__textarea {
-        font-family: SF, sans-serif;
+        font-family: Vazir, sans-serif;
         font-size: 1.4rem;
         resize: none;
         border: 0;
-        border-left: 3px solid  rgb(87, 87, 87);
+        border-right: 3px solid  rgb(87, 87, 87);
         padding: 1.5rem 2rem;
         width: 90%;
         height: 8rem;
@@ -111,8 +113,65 @@
             outline: none;
             resize: none;
             box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
-            border-left: 3px solid $underline-red-color;
+            border-right: 3px solid $underline-red-color;
         }
     }
 
+    
+    &__radio-group {
+        //width: 49%;
+        display: inline-block;
+        &:not(:last-child) {
+            margin-left: 1.5rem;
+        }
+    }
+
+    &__radio-input {
+        display: none;
+    }
+    
+    &__radio-label {
+        font-family: Vazir, sans-serif;
+        font-size: 1.5rem;
+        cursor: pointer;
+        position: relative;
+        padding-right: 4.5rem;
+    }
+
+    &__radio-button {
+        height: 3rem;
+        width: 3rem;
+        border: 5px solid $underline-red-color;
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: -.4rem;
+
+        &::after {
+            content: "";
+            display: block;
+            height: 1.3rem;
+            width: 1.3rem;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: $underline-red-color;
+            opacity: 0;
+            transition: opacity .2s;
+        }
+    }
+
+    &__radio-input:checked ~ &__radio-label &__radio-button::after {
+        opacity: 1;
+    }
+
+}
+
+.radioButtons {
+    margin: 3rem 0 2rem;
+    width: 90%;
+    display: flex;
 }

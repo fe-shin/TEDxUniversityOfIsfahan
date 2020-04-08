@@ -72,7 +72,7 @@
                 <div class="header__container">
                         <img class="header__logo" src="assets/img/Logo.png" />
                         <a href="#registerPopUp" class="registerBigButton">
-                            Nominate a speaker!
+                            معرفی سخنران
                         </a>
                 </div>
                     <div class="header__details">
@@ -102,7 +102,7 @@
 
                     <div class="stickyNavbar__buttons">
                         <a href="#registerPopUp" class="navbar__register">
-                            Nominate a speaker
+                            معرفی سخنران
                         </a>
                         <a href="#" class="navbar__lang">
                             FA
@@ -602,57 +602,93 @@
                     <a class="registerPopUp__closebtn" href="#"><i class="fa fa-remove"></i></a>
 
                     <div class="container">
-                        <h2 class="description__title">Speaker Nomination Form</h2>
+                        <h2 style="margin-bottom: 1rem;" class="description__title">فرم معرفی سخنران</h2>
                         <span class="underline_red"></span>
                         <span class="underline_black"></span>
     
                         <form action="#" class="form" method="post">
-    
+
                             <div class="form__group">
-                                <input type="text" class="form__input" placeholder="Full Name" id="name" required>
-                                <label for="name" class="form__label">Full Name</label>
+                                <div class="radioButtons">
+
+                                    <div class="form__radio-group">
+                                        <input type="radio" class="form__radio-input" id="small" name="size" checked>
+                                        <label for="small" class="form__radio-label">
+                                            <span class="form__radio-button"></span>
+                                            خودم سخنران هستم
+                                        </label>
+                                    </div>
+    
+                                    <div class="form__radio-group">
+                                        <input type="radio" class="form__radio-input" id="large" name="size">
+                                        <label for="large" class="form__radio-label">
+                                            <span class="form__radio-button"></span>
+                                            می‌خواهم سخنران معرفی کنم
+                                        </label>
+                                    </div>
+                        
+                                </div>
                             </div>
     
                             <div class="form__group">
-                                <input type="email" class="form__input" placeholder="Email Address" id="email" required>
-                                <label for="email" class="form__label">Email Address</label>
+                                <input type="text" class="form__input" placeholder="نام و نام خانوادگی" id="name" required>
+                                <label for="name" class="form__label">نام و نام خانوادگی</label>
                             </div>
     
                             <div class="form__group">
-                                <input type="text" class="form__input" placeholder="Phone Number" id="phone" required>
-                                <label for="phone" class="form__label">Phone Number</label>
+                                <input type="email" class="form__input" placeholder="آدرس پست الکترونیکی" id="email" required>
+                                <label for="email" class="form__label">پست الکترونیکی</label>
                             </div>
     
                             <div class="form__group">
-                                <input type="text" class="form__input" placeholder="Full Name of The Nominated Speaker" id="nameSpeaker" required>
-                                <label for="career" class="form__label">Full Name of The Nominated Speaker</label>
+                                <input type="text" class="form__input" placeholder="شماره تلفن همراه" id="phone" required>
+                                <label for="phone" class="form__label">شماره تلفن همراه</label>
                             </div>
     
                             <div class="form__group">
-                                <input type="text" class="form__input" placeholder="Email Address or Phone Number of The Nominated Speaker" id="phoneEmailSpeaker" required>
-                                <label for="degree" class="form__label">Email Address or Phone Number of The Nominated Speaker</label>
+                                <input type="text" class="form__input" placeholder="نام و نام خانوادگی سخنران" id="nameSpeaker" required>
+                                <label for="nameSpeaker" class="form__label">نام و نام خانوادگی سخنران</label>
                             </div>
     
                             <div class="form__group">
-                                <label class="form__label--2" for="msg1">What is the idea of the nominated speaker?
+                                <input type="text" class="form__input" placeholder="پست الکترونیکی سخنران" id="emailSpeaker" required>
+                                <label for="emailSpeaker" class="form__label">پست الکترونیکی سخنران</label>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="شماره تلفن همراه سخنران" id="phoneSpeaker" required>
+                                <label for="phoneSpeaker" class="form__label">شماره تلفن همراه سخنران</label>
+                            </div>
+    
+                            <div class="form__group">
+                                <label class="form__label--2" for="idea">
+                                    چه ایده‌ای را میخواهید مطرح کنید؟
                                 </label>
-                                <textarea onfocus="this.value = ''" class="form__textarea" id="msg1" required>What is the idea of the nominated speaker?
+                                <textarea onfocus="this.value = ''" class="form__textarea" id="idea" required>چه ایده‌ای را میخواهید مطرح کنید؟
+                                </textarea>
+                            </div>
+
+                            <div class="form__group">
+                                <label class="form__label--2" for="reason">
+                                    دلیل معرفی شما چیست؟
+                                </label>
+                                <textarea onfocus="this.value = ''" class="form__textarea" id="reason" required>دلیل معرفی شما چیست؟
                                 </textarea>
                             </div>
     
                             <div class="form__group--button">
-                                <button class="navbar__register">Register</button>
+                                <button class="navbar__register">ارسال</button>
                             </div>
     
                             <div class="registerPopUp__true">
                                 <p>
-                                    You have successfully registered!
+                                    اطلاعات با موفقیت ثبت شد!
                                 </p>
                             </div>
     
                             <div class="registerPopUp__err">
                                 <p>
-                                    A problem occured while registering your request!
+                                    مشکلی در ثبت اطلاعات رخ داده است!
                                 </p>
                             </div>
     
